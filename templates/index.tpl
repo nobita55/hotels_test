@@ -198,6 +198,14 @@
 <!-- フッター -->
 {include file="`$smarty.const.HTDOCS_DIR`/templates/footer_common.tpl"}
 <!-- / フッター -->
-
+{literal}
+<script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
+{widgetcode:"4ce5ff9dc1a0f0b3ab545e2cb992c06e728930689def3e98865fec7d9aa35e9d1a2010ab7b6727677d37b27582c0e9c4",values:{},ready:function(){}};
+var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
+{/literal}
+		
 </body>
 </html>
