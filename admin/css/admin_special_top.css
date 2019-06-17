@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/*レイアウト全般*/
+.container{
+    width: 100%;
+    display: -moz-box;  
+    display: -webkit-box;
+    border-top: 1px #aaa solid;
+    border-bottom: 1px #aaa solid;
+    padding-top:5px;
+    padding-bottom: 20px;
+}
+
+.cBgSpecialTop{
+    background: #e3e9ea;
+}
+
+.container .leftCandL{
+    border: 1px #aaa solid;
+    margin-right:8px;
+}
+.container .leftContents{
+    width:920px;
+    padding-left: 10px;
+}
+
+.container .centerContents{
+    width:60px;
+}
+.container .rightContents{
+    width: 620px;
+    height: 750px;
+    text-align: left;
+}
+
+/*調整用*/
+.height1line{
+    height: 24px;
+}
+.height2line{
+    height: 48px;
+}
+.line50{
+    line-height: 50px;
+    vertical-align: top;
+}
+.line70{
+    line-height: 70px;
+    vertical-align: top;
+}
+/*
+*テーブル
+*/
+
+.topSpecialTable{
+    width: 900px;
+}
+
+.jobTable,.searchWordTabl,.specialTable{
+    width: 610px;
+}
+
+/*スクロール用*/
+thead.scrollHead,tbody.scrollBody{
+    display:block;
+}
+
+tbody.scrollBody{
+    overflow-y:scroll;
+    background: white;
+}
+tbody.jobScroll,tbody.searchWordScroll{
+    height: 650px; 
+    border: 1px #aaa solid;
+}
+tbody.specialScroll{
+    height: 700px; 
+    border: 1px #aaa solid;
+}
+
+tbody.topSpecialScroll{
+    height: 520px;
+}
+
+/*幅調整*/
+th{
+    table-layout:fixed;
+    border: 1px #aaa solid;
+    border-bottom: none;
+    background: #ddd;
+    text-align: center;
+    padding: 0px 5px;
+}
+td{
+    table-layout:fixed;
+    border: 1px dotted #aaa;
+    padding: 0px 5px;
+}
+
+/*スマフォ特集セル*/
+.sortRank{
+    width:40px;
+    text-align: center;
+}
+.catch{
+    width:410px;
+}
+.open{
+    width:50px;
+    text-align: center;
+}
+.topBanner{
+    width:50px;
+    text-align: center;
+}
+.specialTitle{
+     width:282px;
+}
+.specialTable .title{
+        width:500px;
+}
+.specialTable .num{
+        width:90px;
+}
+
+/*コントローラー*/
+.leftControllers{
+    width: 900px;
+    height: 180px;
+    display: -moz-box;  
+    display: -webkit-box;
+}
+.leftControllersFavorite{
+    width: 900px;
+    height: 75px;
+    display: -moz-box;  
+    display: -webkit-box;
+}
+.topSpecialController{
+    display: -moz-box;  
+    display: -webkit-box;
+    padding-left: 20px;
+    padding-top: 5px;
+    line-height:1.5em;
+}
+
+.favoriteController{
+    display: -moz-box;  
+    display: -webkit-box;
+    padding-left: 50px;
+    padding-top: 5px;
+    line-height:1.5em;
+}
+
+.topSpecialController div{
+    padding-left: 5px;   
+}
+.topSpecialController span{
+    vertical-align: top;
+}
+.controllLeft{
+    text-align: right;
+}
+.controllRight{
+    text-align: right;
+}
+.controllCenter{
+    width: 530px;
+}
+.controllCenterFavorite{
+    width: 350px;
+}
+.jobController{
+    width: 610px;
+    padding: 10px;
+    border: 1px #aaa solid;
+    border-top: none;
+}
+
+/*フォーム*/
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+input[type="text"]{
+    height: 25px;
+    font-size:110%
+}
+
+input[type="number"] {
+    padding-left: 5px;
+    width: 50px;
+    height: 25px;
+    font-size:110%;
+}
+
+textarea {
+    width: 500px;
+    height: 65px;
+    line-height:1.2em;
+    resize: none;
+}
+
+.formStatus{
+    color: #438f90;
+    font-weight: bold;
+}
+
+/*センターボタン*/
+.buttons{
+    margin-top: 100px;
+}
+.buttons div{
+    padding-top: 20px;
+    margin-bottom: 200px;
+}
+
+/*JS用*/
+.jsRegisted{
+    color:#952507;
+    font-weight: bold;
+}

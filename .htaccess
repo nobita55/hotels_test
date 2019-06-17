@@ -1,0 +1,9 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /home/centralcrew/hotelswork.xyz/pw/.adminpasswd
+require valid-user
+
+#####phpversion#####
+AddHandler x-httpd-php5.5 .php .phps
+#####end:phpversion#####
+DirectoryIndex index.php index.cgi index.html index.htm

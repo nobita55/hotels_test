@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 特集一覧ページ　ページタイトル設定
+------------------------------------------------------------*/
+@media only screen and (min-width:640px) {
+.specialPageTitle {
+	margin-bottom:20px;
+	padding: 33px 0 30px;
+		
+	font-size:2.8rem;
+	color:#ffffff;
+
+	background-color: #d86f77;
+}
+.specialPageTitle .fa{
+	margin-right:10px;
+}
+}
+
+@media only screen and (max-width:639px) {
+.specialPageTitle {
+	padding: 18px 0 18px;
+	
+	font-size:1.8rem;
+	color:#ffffff;
+	background-color: #d86f77;
+}
+.specialPageTitle .fa{
+	margin-right:10px;
+}
+}
+
+
+
+
+/* 看板画像 */
+#mainBanner{
+margin:0px auto;
+padding:0;
+width:100%;
+}
+
+@media only screen and (max-width:939px) {
+#mainBanner img{
+max-width:100%;
+height:auto;
+}
+}
+
+/* スマートフォン 縦(ポートレート) */
+@media only screen and (max-width:480px){
+	#mainBanner{margin-left:1px;}
+}
+
+
+
+
+
+@media only screen and (min-width:640px) {
+.specialBox{
+	margin-bottom:61px;
+	background:#f9f9f9;
+	}
+	
+.specialBoxInner{
+	margin:-20px auto 0;
+	padding-bottom:40px;
+	text-align:center;}
+
+.specialTitle{
+	width:396px;
+	margin:0 auto 27px;
+	padding-top:51px;
+	padding-bottom:23px;
+	
+	font-size:3.3rem;
+	color:#d86f77;
+	line-height:1.2;
+	text-align:center;
+	
+	background: url(../img/special/specialtitle.gif) center bottom no-repeat;
+	}
+
+.specialTitle + p{
+	width:500px;
+	margin:0 auto;
+	text-align:center;
+	}
+}
+	
+
+@media only screen and (max-width:639px) {
+.specialBox{
+	background:#f9f9f9;
+	}
+	
+.specialBoxInner{
+	margin:0 auto;
+	padding-bottom:22px;}	
+
+.specialTitle{
+	width:65%;
+	margin:0 auto 15px;
+	padding-top:38px;
+	padding-bottom:20px;
+	
+	font-size:1.8rem;
+	color:#d86f77;
+	line-height:1.2;
+	text-align:center;
+	
+	background: url(../img/special/specialtitle.gif) center bottom no-repeat;
+	}
+
+.specialTitle + p{
+	width:68%;
+	margin:0 auto;
+	
+	font-size:1.1rem;
+	text-align:center;
+	}
+}

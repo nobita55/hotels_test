@@ -1,0 +1,97 @@
+@charset "utf-8";
+/*********************************************************************/
+/* クライアント管理画面用テーブルTH定義 */
+.specialEntryBox .th {
+    /*display: table-cell;*/
+    /*width: 200px;*/
+    /*position: relative;*/
+    /*padding-left: 10px;*/
+    margin-top: 5px;
+    background: #e0e6e6;
+    vertical-align: middle;
+    font-weight: bold;
+    border-top:1px #aaa solid;
+}
+
+
+/* クライアント管理画面用テーブルTD定義 */
+.specialEntryBox .td {
+    display: table-cell;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    /*border-bottom:1px #aaa solid;*/
+    width:740px;
+}
+
+.tdBoxL {
+    width: 210px;
+    display:inline-block;
+    vertical-align: top;
+}
+.tdBoxC {
+    margin-right:10px;
+    /*width: 230px;*/
+    display:inline-block;
+    vertical-align: top;
+}
+
+.tdBoxC div{
+    line-height:20px;
+    min-height: 20px;
+}
+
+
+.tdBoxR {
+    /*width: 210px;*/
+    display:inline-block;
+    vertical-align: top;
+}
+
+.dragArea{
+    background-image: url("/admin/img/img_drag_bg.jpg");
+    width:250px;
+    height:175px;
+    background-position:center top;
+    background-repeat:no-repeat;
+    -moz-background-size:contain;
+    background-size:contain;
+    border:1px #ccc dotted;
+}
+
+.dragAreaSquare{
+    background-image: url("/admin/img/img_drag_bg_square.jpg");
+    width:250px;
+    height:250px;
+    background-position:center top;
+    background-repeat:no-repeat;
+    -moz-background-size:contain;
+    background-size:contain;
+    border:1px #ccc dotted;
+}
+
+.fileSelectBtnGroup{
+    text-align: center;
+    padding-top:92px;
+}
+
+.fileSelectBtnGroupSquare{
+    text-align: center;
+    padding-top:135px;
+}
+
+.fileSelectBtnGroup input{
+    display:none;
+}
+
+.fileSelectBtnGroupSquare input{
+    display:none;
+}
+
+
+.btnFileSelect{
+    cursor: pointer;
+}
+
+.btnCancel{
+    cursor: pointer;
+}

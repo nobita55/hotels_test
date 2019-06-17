@@ -1,0 +1,90 @@
+
+/* 職種 */
+.allBt{
+	font-size:1.5rem;
+	background:#ffffff;
+	border:1px solid #3EAA86;
+	border-radius:3px;
+	text-align:center;
+	margin-bottom:15px;
+	}	
+.allBt a{
+	display:block;
+	padding:8px 10px;
+	color:#5ea5a5;
+
+	}
+	
+
+.jobCategory {
+	background-color: #ffffff;
+}
+
+/*部門名の装飾 */
+@media only screen and (min-width:640px) {
+.jobOneCategory {
+	margin-top: 36px;
+	margin-bottom: 27px;
+	color: #444444;
+	font-size: 1.9rem;
+	font-weight: bold;
+}
+}
+@media only screen and (max-width:639px) {
+.jobOneCategory {
+	padding:22px;
+	color: #444444;
+	font-size: 1.9rem;
+	font-weight: bold;
+	
+	background:#f1f1f1;
+}
+}
+
+
+.jobCategory>dd {
+	padding: 21px;
+	background: #f9f9f9;
+	font-size: 1.5rem;
+	line-height:2.8rem;
+}
+
+.jobCategory li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+/* 職種一覧ページのリンクの装飾 */
+.jobCategory a,.jobCategorya:link,.jobCategory a:hover{
+	font-size: 1.5rem;
+	color: #d86f77;
+	text-decoration: none;
+	border-bottom: 1px solid #d86f77;
+	padding-bottom: 1px;
+}
+
+.jobCategory a:hover {
+	font-size: 1.5rem;
+	color: #d86f77;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+@media only screen and (min-width:640px) {
+.categoryAll {
+	font-size: 1.3rem;
+	margin-left: 19px;
+}
+}
+@media only screen and (max-width:639px) {
+.categoryAll {
+	float:right;
+	font-size: 1.3rem;
+	margin-left: 19px;
+}
+}
+.categoryAll .fa {
+	margin-left: 5px;
+	font-size: 1.8rem;
+	color: #d86f77;
+}

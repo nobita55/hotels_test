@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/*検索コントローラー*/
+.searchController{
+    width:1880px;
+    border-bottom: 1px #aaa solid;
+    display: -moz-box;  
+    display: -webkit-box;
+}
+.searchArea{
+    border-right:1px #aaa solid;
+    width:560px;
+}
+.searchJobCategory{
+    border-right:1px #aaa solid;
+    width:560px;
+}
+.searchFeature{
+    border-right:1px #aaa solid;
+    width:360px;
+}
+
+.searchOther{
+    border-right:1px #aaa solid;    
+}
+.searchOther2{
+    margin:2px;
+}
+
+.searchCategory{
+    color: #fff;
+    background-color: #34808d;
+    display:-webkit-box;
+    display:-webkit-flex;
+    -webkit-box-orient:horizontal;
+    -webkit-flex-direction:row;
+}
+
+.searchCategoryName{
+    -webkit-box-flex:2;
+    -webkit-flex:2;
+    padding:1px 5px;
+    font-weight: bold;
+}
+
+.andOrBox{
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+    padding:1px 10px;
+    text-align: right;
+}
+
+.searchOther2{
+    line-height:30px;
+}
+
+.searchBtnBox{
+    line-height:30px;
+    text-align: center;
+    border-top:1px #aaa solid;
+    padding-top:10px;
+}
+
+.fwInfo{
+    font-size: 0.8em;
+    color:#444;
+}
+
+input[name="jobId"]{
+    width:40px;
+}
+input[name="recJobId"]{
+    width:90px;
+}
+
+input[name="fw"]{
+    width: 350px;
+    height: 25px;
+    font-size:110%
+}
+input[name="hotelName"]{
+    width: 350px;
+    height: 25px;
+    font-size:110%
+}
+.searchController{
+    /*display:none;*/
+}
+
+/*並び指定*/
+.listParams{
+    list-style-type: none;
+    margin:0;
+    padding : 3px;
+}
+
+.listParams li{
+    display: inline-block;
+    font-size: 0.9em;
+    border-bottom: 1px #ddd dotted;
+    border-left: 1px #ddd dotted;
+    padding-right: 5px;
+}
+.areaList li{
+    padding-right: 0px;
+    width:80px;
+}
+
+.employmentStatusList li{
+    /*width:100px;*/
+}
+
+.listCategory{
+    width:100%;
+    font-weight: bold;
+}
+
+.bonus{
+    margin:0;
+    padding : 3px;
+}
+/*ボタン*/
+.searchBtn{
+    padding-right:20px;
+    padding-left:20px;
+    height: 30px;
+    color: #fff;
+    background-color:#768d87;
+    -moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    -webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+    background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #566963;
+    font-weight:bold;
+}
+.searchBtn:hover{
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+    background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+    background-color:#6c7c7c;
+}
+
+.selectClearBtn{
+    font-size: 0.8em;
+    height:20px;
+    color: #fff;
+    background-color:#768d87;
+    -moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    -webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+    background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #566963;
+    font-weight:normal;
+}
+
+
+.selectClearBtn:hover{
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+    background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+    background-color:#6c7c7c;
+}

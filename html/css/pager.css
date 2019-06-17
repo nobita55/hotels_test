@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--ページャー------*/
+.pagerBox {
+	width:100%;
+	display: table;
+}
+
+@media only screen and (min-width:640px) {
+.pagerBox {
+	margin-top: 70px;
+	padding-top:20px;
+	border-top:1px solid #cccccc;
+}
+}
+
+@media only screen and (max-width:639px) {
+.pagerBox {
+	padding-top:49px;
+}
+}
+
+.pagerBox span {
+	font-weight: bold;
+}
+@media only screen and (min-width:640px) {
+.pagerLeftBox {
+	width: 15%;
+	display: table-cell;
+}
+.pagerMainBox {
+	width: 70%;
+	display: table-cell;
+	text-align: center;
+	padding-top: 9px;
+}
+.pagerRightBox {
+	width: 15%;
+	display: table-cell;
+}
+}
+
+@media only screen and (max-width:639px) {
+.pagerLeftBox {
+	width: 30%;
+	display: table-cell;
+}
+.pagerMainBox {
+	width: 40%;
+	display: table-cell;
+	text-align: center;
+	padding-top: 9px;
+}
+.pagerRightBox {
+	width: 30%;
+	display: table-cell;
+}
+}
+.pre {
+	padding: 8px 3px;
+	text-align: center;
+	color: #ffffff;
+
+}
+
+.pre:before {
+	content: "\f0d9 ";
+	font-family: FontAwesome;
+	margin-right: 5px;
+}
+
+
+.next {
+	padding: 8px 3px;
+	text-align: center;
+
+}
+
+.next:after {
+	content: "\f0da ";
+	font-family: FontAwesome;
+	margin-left: 5px;
+}
+
+.pageNaviOn {
+	color: #ffffff;
+	font-weight:bold;
+	background-color: #000000;
+}
+.pageNaviOff {
+	color: #ffffff;
+	background-color: #c7c7c7;
+}
+.all {
+	font-size:2.0rem;
+	color: #000000;
+}
+
+
+
+/* 検索インデックス */
+
+@media only screen and (min-width:640px) {
+.searchIndex{
+	width:420px;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+    }
+}
+
+@media only screen and (max-width:639px) {
+	.searchIndex{
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+    }
+}
+
+
+
+.searchIndexR {
+    margin-left: auto;
+}
+
+
+.searchIndexBT{
+	width:200px;
+	padding:10px;
+	text-align:center;
+	margin-left:10px;
+	background: #ffffff;
+	
+	color:#3A9A9E;
+	font-weight:bold;
+	
+	border:#c7c7c7 1px solid;
+	border-radius:5px;}
+	
+@media only screen and (max-width:639px) {
+	
+	.searchIndexBT{
+	width:165px;
+	}
+}
+	
+.searchIcon:before{
+	content: "\f002";
+	font-family: FontAwesome;
+	margin-right: 5px;
+	}
+	
+.sortIcon:before{
+	content: "\f0dd ";
+	font-family: FontAwesome;
+	margin-right: 5px;}
+	
+.searchIndexArea{
+	padding:10px;
+
+	font-weight:bold;
+	background:#f6f1ed;
+	}

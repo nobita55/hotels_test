@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*レイアウト全般*/
+.container{
+    width: 100%;
+    border-top: 1px #aaa solid;
+    border-bottom: 1px #aaa solid;
+}
+
+.cBg{
+    background: #e3e9ea;
+}
+
+.container .contents{
+    width: 100%;
+}
+
+.container .main{
+    margin:0 auto;
+    border-left: 1px #aaa solid;
+    border-right: 1px #aaa solid;
+    background: #fff;
+    width:600px;
+    height:600px;
+    text-align: center;
+    padding-top: 50px;
+    line-height: 50px;
+}

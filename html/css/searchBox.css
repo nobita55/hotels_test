@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*------------------------------------------------------------------
+[ 02. Search Panel ]
+*/
+
+.topSearchBox{
+	padding:8px 0 12px;
+	text-align:center;
+	background-color:#f2eeed;}
+
+.topSearchBoxInner{
+	margin:0 auto;
+	}
+
+
+.fa-search{
+	position:relative;
+	top:3px;
+	color:#5ea5a5;
+	margin-right:5px;}
+
+/* セレクトボックスのプレースホルダーを実現 */
+
+.topSearchBox select,
+.topSearchBox option {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Osaka,sans-serif,'FontAwesome';
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	height: 40px;
+	margin-bottom: 5px;
+	font-size: 1.5rem;
+	line-height: 40px;
+	color: #444444;
+	background: #ffffff url(../img/common/form/selectarrow.gif) no-repeat;
+	background-size: 20px 15px;
+	background-position: right center;
+	vertical-align: middle;
+	border: 1px solid #e9e2e0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+@-moz-document url-prefix() { /* for firefox */
+.searchBox select {
+background:none;
+background-color: #FFF;
+}
+}
+
+.place {
+color: #FF0004;
+}
+
+
+/* セレクトボックスの配置 */
+
+@media only screen and (min-width:640px) {
+.pcform{
+width:42%;}
+}
+
+@media only screen and (max-width:639px) {
+.pcform{
+width:42%;}
+}
+
+
+/* フリーワード検索の装飾 */
+
+.freeword {
+	height: 30px;
+	width:100%;
+	position: relative;
+}
+
+.freeword #s {
+	padding: 5px 10px 5px 5px;
+	height: 40px;
+	line-height: 40px;
+	border: solid 1px #e9e2e0;
+	border-radius: 5px;
+}
+
+@media only screen and (min-width:640px) {
+.freeword #s{
+width:84%;}
+}
+
+@media only screen and (max-width:639px) {
+.freeword #s{
+width:84%;}
+}
+
+.freeword input[type="text"] {
+	display: inline-block;
+	*display:inline;
+	vertical-align: middle;
+	width: auto;
+	margin: 0;
+	padding: 5px 0;
+	font-size: 1.6rem;
+	border: 1px solid #e9e2e0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #fff;
+}
+
+.freeword #searchsubmit {
+	position: absolute;
+	right: 1px;
+	display: inline-block;
+	width: 12%;
+	height: 38px;
+	
+	margin-top: 1px;
+
+	border: 0 none;
+
+	font-size: 1.6rem;
+	color: #5ea5a5;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	background: #000000;
+	border-radius: 0 5px 5px 0;
+	-webkit-appearance: button;
+	content: "";
+	cursor: pointer;
+}
+
+.freeword #searchsubmit {
+	color: #ffffff;
+	background: #5ea5a5;
+}

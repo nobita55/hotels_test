@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>セントラルクルー | 求人申し込みフォーム</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/company_entry.css" rel="stylesheet" type="text/css"/>
+        <script src="js/vender/jquery.js" type="text/javascript"></script>
+        <script src="js/company_entry.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="headerText">
+                <h2 class="topTextJobEdit">
+                    求人申込書
+                </h2>
+            </div>
+        </header>
+
+        <div id="main">
+            <table class="companyEntry">
+                <tr>
+                    <td class="leftCell topCellLeft">
+                        企業名
+                        <div class="must">必須</div>
+                    </td>
+                    <td id="companyName" class="rightCell topCellRight" colspan="2" colspan="2">
+                        <input type="text" name="companyName" class="companyName redBackground" size="58" value="" placeholder="例：株式会社リゾート">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell">
+                        企業名（フリガナ）
+                        <div class="must">必須</div>
+                    </td>
+                    <td id="companyNameKana" class="rightCell" colspan="2">
+                        <input type="text" name="companyNameKana" class="companyName redBackground" size="58" value="" placeholder="例：カブシキガイシャリゾート">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell">
+                        施設名（部署名）
+                        <div class="must">必須</div>
+                    </td>
+                    <td id="facilityName" class="rightCell" colspan="2">
+                        <input type="text" class="companyName redBackground" size="58" name="facilityName" value="" placeholder="例：セントラルホテル">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell" rowspan="2">
+                        ご担当者お名前
+                        <div class="must">必須</div>
+                    </td>
+                    <td class="sCellLeft">
+                        氏名
+                    </td>
+                    <td id="name" class="sCellRight">
+                        <input type="text" class="companyName redBackground" size="30" name="name" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sCellLeft sCellBottom">フリガナ</td>
+                    <td id="nameKana" class="sCellRight">
+                        <input type="text" class="companyName redBackground" size="30" name="nameKana" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell">
+                        メールアドレス
+                        <div class="must">必須</div>
+                    </td>
+                    <td id="mail" class="rightCell" colspan="2">
+                        <input type="text" class="companyName redBackground" size="58" name="mail" value="" placeholder="例：info@cchotel.com">
+                        <div class="caption">
+                            半角英数
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell">
+                        メールアドレス（確認）
+                        <div class="must">必須</div>
+                    </td>
+                    <td id="mail2" class="rightCell" colspan="2">
+
+                        <input type="text" class="companyName redBackground" size="58" name="mail2" value="">
+                        <div class="caption">
+                            確認のため、もう一度入力してください。
+                        </div>    
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell">
+                        電話番号
+                        <div class="must">必須</div>
+                    </td>
+                    <td id="tel" class="rightCell" colspan="2">
+
+                        <input type="text" class="companyName redBackground" size="58" name="tel" value="" placeholder="例：090-0000-0000">
+                        <div class="caption">
+                            半角数字ハイフンのみ
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell" rowspan="3">
+                        住所
+                        <div class="must">必須</div>
+                    </td>
+                    <td class="sCellLeft">
+                        郵便番号
+                    </td>
+                    <td id="postCode" class="sCellRight">
+                        〒<input type="text" class="companyName inputMargin redBackground" size="15" name="postCode" value="" placeholder="例：100-0000">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sCellLeft">
+                        都道府県
+                    </td>
+                    <td id="pref" class="sCellRight">
+                        <select name="pref">
+                            <option value="サンプル1">都道府県を選択</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sCellLeft sCellBottom">
+                        住所
+                    </td>
+                    <td id="address" class="sCellRight">
+                        <input type="text" class="companyName redBackground" size="70" name="address" value="" placeholder="例：新宿区新宿123">
+                    </td>
+                </tr>   
+                <tr>
+                    <td class="leftCell">
+                        仕事内容
+                        <div class="must">必須</div>
+                    </td>
+                    <td class="rightCell" colspan="2">
+                        <div id="jobSection" class="jobSection">
+                            <select name="jobSection">
+                                <option value="サンプル1">部門を選択</option>
+                                <option value="サンプル1">宿泊部門</option>
+                                <option value="サンプル1">料飲部門</option>
+                                <option value="サンプル1">婚礼部門</option>
+                                <option value="サンプル1">調理</option>
+                                <option value="サンプル1">営業部門</option>
+                                <option value="サンプル1">管理部門</option>
+                                <option value="サンプル1">スパ部門</option>
+                                <option value="サンプル1">その他</option>  
+                            </select>
+                        </div>
+                        <div id="jobCategory" class="jobCategory">
+                            職種<input type="text" name="jobCategory" class="inputMargin redBackground" placeholder="例：フロント">
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell">勤務シフト</td>
+                    <td class="rightCell" colspan="2">
+                        <div class="shiftText">
+                            シフト制
+                        </div>    
+                        <div class="inputTime">
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                            ～
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                        </div>
+                        <div class="shiftText">
+                            休憩時間
+                        </div>    
+                        <div class="inputTime">
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                            ～
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                        </div>
+                        <br clear="all">
+
+                        <div class="shiftText">
+                            中抜け
+                        </div>    
+                        <div class="inputTime">
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                            ～
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                        </div>
+                        <div class="shiftText">
+                            休憩時間
+                        </div>    
+                        <div class="inputTime">
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                            ～
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                        </div>
+                        <br clear="all">
+
+                        <div class="shiftText">
+                            早番
+                        </div>    
+                        <div class="inputTime">
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                            ～
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                        </div>
+                        <div class="shiftText">
+                            休憩時間
+                        </div>    
+                        <div class="inputTime">
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                            ～
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                        </div>
+                        <br clear="all">
+
+                        <div class="shiftText">
+                            遅番
+                        </div>    
+                        <div class="inputTime">
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                            ～
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                        </div>
+                        <div class="shiftText">
+                            休憩時間
+                        </div>    
+                        <div class="inputTime">
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                            ～
+                            <input type="text" class="companyName" size="8" name="companyName" value="">
+                        </div>
+                        <br clear="all">
+
+                        <div class="shiftText shiftBottom">
+                            その他
+                        </div>
+                        <div class="otherBox">
+                            <input type="text" class="other">
+                        </div>  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell">休日・休暇</td>
+                    <td class="rightCell" colspan="2">
+                        <div class="holidayBox">
+                            <input type="checkbox" id="i1"><label for="i1">土日祝</label>
+                        </div>
+                        <div class="holidayBox">
+                            <input type="checkbox" id="i1"><label for="i1">週休2日</label>
+                        </div>
+                        <div class="holidayBox">
+                            <input type="checkbox" id="i1"><label for="i1">週休1日</label>
+                        </div>
+                        <div class="holidayBox">
+                            <input type="checkbox" id="i1"><label for="i1">GW</label>
+                        </div>
+                        <div class="holidayBox">
+                            <input type="checkbox" id="i1"><label for="i1">SW</label>
+                        </div>
+                        <div class="holidayBox">
+                            <input type="checkbox" id="i1"><label for="i1">夏季休暇</label>
+                        </div>
+                        <div class="holidayBox">
+                            <input type="checkbox" id="i1"><label for="i1">年末年始</label>
+                        </div>
+                        <br clear="all">
+
+                        <div class="shiftText shiftBottom">
+                            その他
+                        </div>
+                        <div class="otherBox">
+                            <input type="text" class="other">
+                        </div>  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell">給与・賞与</td>
+                    <td class="rightCell" colspan="2">
+                        <div class="salaryBoxLeft">
+                            <select name="example">
+                                <option value="サンプル1">給与形式を選択</option>
+                                <option value="サンプル2">時給</option>
+                                <option value="サンプル3">日給</option>
+                                <option value="サンプル3">月給</option>
+                            </select>
+                            <br />
+                            &yen;<input type="text" class="companyName" size="8" name="companyName" value="">～&yen;<input type="text" class="companyName" size="8" name="companyName" value="">
+                        </div>
+                        <div class="salaryBoxRight">
+                            賞与
+                            <INPUT type="radio" name="rdo" id="r1"><LABEL for="r1">あり</LABEL>
+                            <INPUT type="radio" name="rdo" id="r1"><LABEL for="r1">なし</LABEL>
+                        </div>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell">寮・社宅情報</td>
+                    <td class="rightCell" colspan="2">
+                        寮の有無
+                        <input type="radio" name="rdo" id="r1"><label for="r1">あり</LABEL>
+                        <input type="radio" name="rdo" id="r1"><label for="r1">なし</LABEL>
+                        <br />
+
+                        <div class="dormitoryBox">
+                            <input type="checkbox" id="i1"><label for="i1">寮個室</label>
+                        </div>
+                        <div class="dormitoryBox">
+                            <input type="checkbox" id="i1"><label for="i1">寮費無料</label>
+                        </div>
+                        <div class="dormitoryBox">
+                            <input type="checkbox" id="i1"><label for="i1">光熱費無料</label>
+                        </div>
+                        <br clear="all">
+
+                        <div class="dormitoryBox">
+                            <input type="checkbox" id="i1"><label for="i1">車持ち込み可</label>
+                        </div>
+                        <div class="dormitoryBox">
+                            <input type="checkbox" id="i1"><label for="i1">職場が徒歩圏内</label>
+                        </div>
+                        <br clear="all">
+
+                        <div class="dormitoryOtherBox">
+                            <div class="shiftText shiftBottom">
+                                その他
+                            </div>
+                            <div class="otherBox">
+                                <input type="text" class="other">
+                            </div>  
+                        </div>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCell">備考</td>
+                    <td class="rightCell" colspan="2">
+                        <textarea name="example" cols="50" rows="10" wrap="soft" class="bikou"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="submit">
+                        <input type="submit" value="入力内容の確認画面へ">
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </div>
+    </body>
+</html>

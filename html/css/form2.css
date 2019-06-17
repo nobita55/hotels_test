@@ -1,0 +1,40 @@
+
+.searchform {
+	height: 30px;
+	position: relative;
+}
+
+
+.searchform #s {
+	width:74%;
+	padding: 5px 10px 5px 5px;
+	height: 40px;
+	line-height: 40px;
+	border: solid 1px #f2eeed;
+	border-radius: 0;
+}
+
+.searchform #searchsubmit {
+	position: relative;
+	top: 1px;
+
+	border: 0 none;
+	cursor: pointer;
+	width: 10%;
+	height: 40px;
+	margin: 0;
+	background: #5ea5a5;
+	color: #FFF;
+	border-radius: 0;
+	-webkit-appearance: button;
+	content: "";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	padding-right: 0.2em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 1.2em;
+}

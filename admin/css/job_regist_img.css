@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/*レイアウト全般*/
+.container{
+    width: 100%;
+    border-top: 1px #aaa solid;
+    border-bottom: 1px #aaa solid;
+}
+
+.cBg{
+    background: #e3e9ea;
+}
+
+.container .contents{
+    width: 100%;
+}
+
+.container .main{
+    margin:0 auto;
+    border-left: 1px #aaa solid;
+    border-right: 1px #aaa solid;
+    background: #fff;
+    width:1000px;
+    pdding-top:10px;
+}
+
+li {
+    list-style-type:none;
+    border-bottom: 1px #aaa dotted;
+}
+.cadminTable{
+    
+    /*border-bottom: 1px #aaa dotted;*/
+}
+
+.tdBox{
+    padding-top:20px;
+    padding-bottom:20x;
+}
+/**企業用から移植*************************************************/
+/*form.css*/
+h3 {
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-bottom: 12px;
+    border-top: 3px solid #3a9a9e;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3a9a9e;
+}
+
+
+/*********************************************************************/
+
+
+.cadminTable .cancelBtn {
+    background: #EEE;
+    border: 1px solid #DDD;
+    color: #111;
+    padding: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+/* クライアント管理画面用テーブルTH定義 */
+.cadminTable .th {
+    display: table-cell;
+    width: 200px;
+    position: relative;
+    padding-left: 10px;
+    background: #e0e6e6;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.cadminTable .thL {
+    display: table-cell;
+    vertical-align: middle;
+    width: 145px;
+    font-weight: bold;
+}
+
+.cadminTable .thR {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* クライアント管理画面用テーブルTD定義 */
+.cadminTable .td {
+    display: table-cell;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.cadminTable .tdBox {
+    /*display: box;*/
+    padding-left:20px;
+    padding-bottom:20px;
+}
+
+.tdBoxL {
+    width: 310px;
+    display:inline-block;
+    vertical-align: top;
+}
+.tdBoxC {
+    margin-right:10px;
+    width: 230px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.tdBoxC div{
+    line-height:20px;
+    min-height: 20px;
+}
+
+.tdBoxC .btnBox{
+    margin-top:5px;
+}
+
+.tdBoxR {
+    width: 210px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.tdUpper {
+    padding-left:20px;
+    padding-top:10px;
+}
+.tdUpper .errorBox{
+    display: inline-block;
+    width: 550px;
+}
+
+.tdUpper .toolTip{
+    display: inline-block;
+}
+
+.tdLower{
+    width:800px;
+    /*padding-top:20px;*/
+    padding-left:20px;
+    padding-bottom:20px;
+    /*border-top:#999999 1px dotted;*/
+    display: inline-block;
+}
+.tdLower input{
+    width: 300px;;
+}
+
+.dragArea{
+    background-image: url("/admin/img/img_drag_bg_square.jpg");
+    width:250px;
+    height:250px;
+    background-position:center top;
+    background-repeat:no-repeat;
+    -moz-background-size:contain;
+    background-size:contain;
+    border:1px #ccc dotted;
+}
+.fileSelectBtnGroup{
+    text-align: center;
+    padding-top:135px;
+}
+
+.fileSelectBtnGroup input{
+    display:none;
+}
+
+.btnFileSelect{
+    cursor: pointer;
+}
+
+.btnCancel{
+    cursor: pointer;
+}
+.btBox{
+    text-align: center;
+}
+.btBox > div{
+    display: inline-block;
+    
+}
+
+.btBoxL{
+    margin-left:50px;
+}
+
+.btBoxR{
+    margin-left:50px;
+}

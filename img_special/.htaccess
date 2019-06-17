@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ([^/]+) img_view.php?file=$1 [L,QSA]

@@ -1,0 +1,431 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#footer{
+	background:#f9f9f9;
+	}
+
+.footerLogo span {
+    display: none;
+}
+
+
+@media only screen and (min-width:640px) {
+#footer{
+	margin-top:60px;
+	padding-top:72px;
+}
+}
+
+@media only screen and (min-width:640px) {
+	
+	.entryArea{
+		margin:100px auto 0 auto;
+		width:900px;
+		height:245px;
+		border:#999999 2px solid;
+	}
+	
+	.entryMain{
+		display:inline-table;
+		vertical-align:middle;
+		padding:20px 0 0 27px;
+	}
+	
+	.entryMain img{
+		width:484px;
+		height:121px;
+	}
+	
+	.entryAction{
+		display:inline-table;
+		padding:34px 0 0 15px;
+	}
+	
+	.entryTelBg{
+		width:331px;
+		height:34px;
+		background:url(../img/common/footer/pcEntryTel.gif) 0 0 no-repeat;
+	}
+	
+	.entryTel{
+		display:none;
+	}
+	
+	.entryTelCom{
+		font-size:1.2rem;
+		color:#777777;
+		text-align:center;
+		padding:10px 0 10px 0;
+	}
+	
+	.entryWeb img{
+		width:331px;
+		height:61px;
+	}
+	
+	.entrySpot{
+		text-align:center;
+		font-size:1.3rem;
+		color:#777777;
+		padding:20px 0 0 0;
+	}
+	
+	.feelFree{
+		color:#d86f77;
+	}
+	
+.footerMenu {
+	width: 980px;
+	margin: 0 auto;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.footerL {
+	width: 648px;
+	margin-right: 28px;
+}
+
+.footerL li {
+	display: inline-block;
+	width: 200px;
+	height: 30px;
+}
+
+.footerL li a{
+	color:#444444;
+}
+
+.footerL li a:hover{
+	color:#d86f77;
+}
+
+
+
+
+.footerL .fa {
+	display:none;
+}
+
+.footerR {
+	width: 212px;
+}
+
+.footerBottom {
+	margin-top: 55px;
+	border-top: 1px solid #cccccc;
+	background-color:#ffffff;
+}
+
+.footerTelBg {
+	width: 980px;
+	height: 101px;
+	margin: 0 auto;
+	padding-top: 25px;
+	background: url(../img/common/footer/footertelbg.gif) 0 0 no-repeat;
+}
+
+.footerInquiryBt {
+	width: 285px;
+	margin-left: auto;
+	text-align: center;
+	background-color: #f9f9f9;
+	border: 1px solid #cccccc;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+.footerInquiryBt a {
+	display: block;
+	padding: 15px 0 18px;
+}
+
+.footerInquiryBt a:hover {
+	background:#f0eeee;
+}
+
+.pcFooterInquiryBt {
+	width: 285px;
+	margin-left: auto;
+	text-align: center;
+	background-color: #f9f9f9;
+	border: 1px solid #cccccc;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+.pcFooterInquiryBt a {
+	display: block;
+	padding: 15px 0 18px;
+}
+
+
+.footerCopyRight {
+	padding: 15px 0;
+	height:50px;
+	background-color: #444444;
+	text-align: center;
+	color: #ffffff;
+	font-size:1.1rem;
+}
+
+.footerLogo {
+	display: block;
+	width: 217px;
+	height: 124px;
+	background: url(../img/common/footer/pcfooterlogo.gif) 0 0 no-repeat;
+}
+
+.spPageTop{
+	display:none;}
+
+
+.spFooterTelBt{
+	display:none;}
+
+.footerBottomH1{
+	display:none;}
+
+.footerBottomH2{
+	display:none;}
+}
+
+
+
+@media only screen and (max-width:639px) {
+	
+	.entryArea{
+		margin:60px auto 0 auto;
+		width:90%;
+		border:#999999 3px solid;
+	}
+	
+	.entryMain{
+		text-align:center;
+		padding:15px 0 0 0;
+	}
+	
+	.entryMain img{
+		width:95%;
+		height:95%;
+	}
+	
+	.entryTel{
+		text-align:center;
+		padding:15px 0 0 0;
+	}
+	
+	.entryWeb{
+		text-align:center;
+		padding:5px 0 0 0;
+	}
+	
+	.entryTel img{
+		width:90%;
+		height:90%;
+	}
+	
+	.entryWeb img{
+		width:90%;
+		height:90%;
+	}
+	
+	.entryTelCom{
+		font-size:1.2rem;
+		color:#777777;
+		text-align:center;
+		padding:5px 0 0 0;
+	}
+	
+	.telHours{
+		color:#d86f77;
+	}
+	
+	.entrySpot{
+		font-size:1.2rem;
+		color:#777777;
+		text-align:center;
+		padding:10px 0 10px 0;
+		width:76%;
+		margin:0 auto;
+		line-height:1.4;
+	}
+	
+	.feelFree{
+		color:#d86f77;
+	}
+		
+	
+.spPageTop{
+	margin-top:60px;
+	padding:15px;
+	border-top:1px solid #ede4e7;
+	text-align:center;
+	background:#f8f6f7;}
+
+.spPageTop a{
+	display:block;
+	color:#444444;
+	font-weight:bold;
+}
+	
+.spPageTop i{
+	display:block;
+	font-size:2.4rem;}
+	
+	
+	
+.footerMenu {
+	background-color:#ffffff;
+}
+
+.footerL {
+		background:#444444;
+}
+
+.footerL li {
+	display: block;
+	width: 94%;
+	margin-left:3%;
+	border-bottom:1px solid #666666;
+	background:url(../img/common/footer/footerarrowright.gif) right center no-repeat;
+}
+
+.footerL .fa{
+	color:#d86f77;
+	width:25px;
+	font-size:2.0rem;
+
+}
+
+.footerL a{
+	display:block;
+	padding:15px 0;
+	color:#ffffff;
+}
+
+.footerLogo {
+	position: relative;
+	display: block;
+	width: 180px;
+	height:100px;
+	margin:0px auto;
+	margin-top:36px;
+	text-align:center;
+	background: url(../img/common/footer/spfooterlogo.gif) 0 0 no-repeat;
+	background-size: 180px 50px;
+}
+
+.footerLogo:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #ffffff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+
+.footerInquiryBt {
+	width:80%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #f9f9f9;
+	border: 1px solid #cccccc;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+.footerInquiryBt a {
+	display: block;
+	padding: 15px 0 18px;
+}
+
+
+.spFooterTelBt {
+	width:80%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #f9f9f9;
+	border: 1px solid #cccccc;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+.spFooterTelBt a {
+	display: block;
+	padding: 15px 0 18px;
+}
+
+
+
+
+
+.footerBottom {
+	padding:30px 0 25px 0;
+	text-align:center;
+	background:#d86f77;
+}
+
+.footerBottomH1{
+	margin-bottom:20px;
+	font-size:2.0rem;
+	color:#ffffff;
+	font-weight:bold;}
+	
+.footerBottomH2{
+	margin:5px 0 15px;
+	font-size:1.4rem;
+	color:#ffffff;
+	font-weight:bold;}	
+
+.footerCopyRight {
+	padding: 15px 0;
+	height:50px;
+	background-color: #ffffff;
+	text-align: center;
+	color: #444444;
+	font-size:1.2rem;
+
+}
+
+}
+
+.SNSIcon{
+	padding-top:13.0rem;
+	padding-left:7.0rem;
+	}
+
+.SNSIcon a{
+
+	}
+        
+.iconInsta{
+    display: inline-block;
+    vertical-align: top;
+    padding-top:3px
+}
+
+.iconInsta img{
+    vertical-align: top
+}
+	
+@media only screen and (max-width:639px) {
+.SNSIcon{
+	padding-top:5.5rem;
+	padding-left:0;
+	margin-bottom:2.0rem;
+	text-align:center;
+	}
+}

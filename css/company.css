@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+
+/* テーブルレイアウト制御 */
+
+.companyTable {
+	background-color: #ffffff;
+	font-size: 1.6rem;
+}
+
+
+
+.companyTable td:first-child {
+	border-bottom: dolid 1px #cccccc;
+}
+
+@media only screen and (min-width:640px) {
+.companyTable table {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+
+.companyTable table {
+	border-top: 1px solid #cccccc;
+}	
+	
+.companyTable th {
+	padding: 10px 10px;
+	width: 30%;
+	color: #13131e;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: middle;
+	border-bottom: 1px solid #cccccc;
+	background-color: #f1f1f1;
+}
+
+.companyTable td {
+	padding: 10px 10px;
+	text-align: left;
+	vertical-align: middle;
+	color: #595960;
+	border-bottom: 1px solid #cccccc;
+}
+}
+
+
+
+@media (max-width: 639px) {
+
+.companyTable {
+	
+}
+.companyTable table {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.companyTable th {
+	padding: 10px 10px;
+	width: 100%;
+	color: #13131e;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	border-radius: 3px;
+	background-color: #f1f1f1;
+}
+
+.companyTable td {
+	padding: 8px 10px;
+	display: list-item;
+	list-style: none;
+	width: 100%;
+	border-top: none !important;
+}
+}

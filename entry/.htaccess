@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !(\.(gif|jpe?g|png|js|css))$
+RewriteRule ([^/]+) entry.php?mode=entry&action=$1 [L,QSA]

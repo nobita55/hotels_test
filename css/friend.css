@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.friendTitle {
+	margin-top:-20px;
+	background-color: #f6f5f5;
+	margin-bottom:5px;
+}
+
+.friendTitle img{
+	width:100%;
+	height:auto;
+	
+}
+
+p{
+	font-size:1.5rem;
+	color:#777777;}
+
+.friendCampaign h3{
+	margin-top:40px;
+	margin-bottom:15px;
+	text-align:center;
+	font-weight:bold;}
+
+/*見出しの装飾 */
+@media only screen and (min-width:640px) {
+.friendCampaign h2 {
+	margin-top: 36px;
+	margin-bottom: 27px;
+	padding-bottom:10px;
+	color: #444444;
+	font-size: 1.9rem;
+	font-weight: bold;
+	
+	border-bottom:1px solid #cccccc;
+}
+}
+@media only screen and (max-width:639px) {
+.friendCampaign h2 {
+	margin-top:15px;
+	margin-bottom:10px;
+	padding:11px;
+	color: #444444;
+	font-size: 1.6rem;
+	font-weight: bold;
+	
+	background:#f1f1f1;
+	border-top:1px solid #eee7e8;
+	border-bottom:1px solid #eee7e8;
+}
+}
+
+
+.friendP{
+	color:#d86f77;}
+
+
+h3{
+	color: #777777;
+	font-size: 1.9rem;
+	font-weight: bold;}
+	
+	
+.friendCampaign span{
+	color:#d86f77;}
+	
+@media only screen and (min-width:640px) {
+.friendCampaign table {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+
+.friendCampaign table {
+	border-top: 1px solid #cccccc;
+}	
+	
+.friendCampaign th {
+	padding: 10px 10px;
+	width: 30%;
+	color: #13131e;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: middle;
+	border-bottom: 1px solid #cccccc;
+	background-color: #f1f1f1;
+}
+
+.friendCampaign td {
+	padding: 10px 10px;
+	text-align: left;
+	vertical-align: middle;
+	color: #595960;
+	border-bottom: 1px solid #cccccc;
+}
+
+
+}
+
+
+
+@media (max-width: 639px) {
+
+.friendCampaign {
+	
+}
+.friendCampaign table {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.friendCampaign th {
+	padding: 10px 10px;
+	width: 100%;
+	color: #13131e;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	border-radius: 3px;
+	background-color: #f1f1f1;
+}
+
+.friendCampaign td {
+	padding: 8px 10px;
+	display: list-item;
+	list-style: none;
+	width: 100%;
+	border-top: none !important;
+}
+}
+
+
+/* 手順 */
+.friendCampaign {
+	background-color: #ffffff;
+	color:#777777;
+	}
+
+.friendSection{
+	margin-left:15px;}
+
+.friendCampaign .friendSection {
+	margin-top: 40px
+	}
+
+
+.friendCampaign .friendSection>dt {
+position: relative;
+font-size: 1.6rem;
+margin-top: 15px;
+padding-left: 30px;
+
+font-weight:bold;
+}
+
+
+.friendCampaign>dd {
+	padding-left: 30px;
+	font-size:1.2rem;}
+	
+	
+.friendCampaign .friendSection>dd {position: relative;padding:16px 10px 15px 30px}
+
+.friendCampaign .friendSection>dd:not(:last-child) {border-bottom: 1px solid #ede6e7}
+
+
+
+/* QとＡのマーク */
+.friendCampaign .friendSection>dt .q {
+position: absolute;
+left: 0;
+font-size: 1.6rem;
+color: #f08f9b;
+}
+
+
+
+
+
+
+
+
+/* 電話ボタンデザイン */
+
+/* スマホ時電話を掛けるボタンデザイン */
+
+@media only screen and (min-width:640px) {
+.friendPCTel{
+	margin:50px 0;
+		text-align:center;}
+		
+.friendSPTelBt{
+	display:none;}
+}
+
+@media only screen and (max-width:639px) {
+
+.friendPCTel{
+	display:none;}
+	
+.friendSPTelBt{
+	width:90%;
+	margin:20px auto;
+	line-height:1.3;
+	text-align:center;
+
+	background:#d86f77;
+	border-radius:3px;
+	-webkit-border-radius:3px;}
+	
+.friendSPTelBt span{
+	background:url(../img/job/detail/freedial.gif) no-repeat left center;
+	padding-left:27px;
+	background-size: 26px 14px;}
+
+
+.friendSPTelBt span{
+	font-size:1.5rem;
+	color:#ffffff;}
+	
+.friendSPTelBt div{
+	font-size:2.5rem;}
+		
+.friendSPTelBt a:link,.friendSPTelBt a:visited{
+	display:block;
+	padding:10px 0;
+	color:#ffffff;
+}
+}
+
+

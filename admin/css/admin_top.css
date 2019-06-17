@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/*レイアウト全般*/
+
+.container{
+    width: 100%;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+    border-top: 1px #aaa solid;
+    border-bottom: 1px #aaa solid;
+    padding-top:5px;
+    padding-bottom: 20px;
+}
+
+.cBg{
+    background: #f6f6f6;
+}
+
+.menuTitle{
+    margin:5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing:0.2em;
+    padding:2px 0px;
+    color: #fff;
+    background: #3f302c
+}
+.menuLine{
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+}
+
+.menuCell{
+    width:200px;
+    height:100px;
+    line-height: 100px;
+    border: 1px solid #5b898b;
+    text-align: center;
+    font-size: 1.2em;
+    background: #fff;
+    margin:5px;
+}
+
+.info{
+    margin:5px;
+    border: 1px solid #5b898b;
+    width:600px;
+    /*padding:10px;*/
+}
+/************************************/
+.dragArea{
+    width:200px;
+    height:150px;
+    background: #fff;
+    margin:20px;
+    padding:20px;
+    border:1px #aaa dashed;
+    text-align: center;
+    border-radius: 10px;       
+    -webkit-border-radius: 10px;     
+    -moz-border-radius: 10px;
+}
+
+.container .main{
+    margin:10px;
+}
+
+.fileInfoArea{
+    margin-top:50px;
+}
+
+.registBtnBox{
+    margin-top:20px;
+}
+
+.fileUpInfo{
+    padding-top:10px;
+    padding-left:10px;
+    background: #a4d1d4;
+}
+
+.fileUploadArea{
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+    background: #a4d1d4;
+    border-bottom: 1px solid #bbb;
+    /*padding:10px;*/
+}
+
+.analyze{
+    padding:10px;
+    border-bottom: 1px solid #bbb;
+    background: #fff;
+}
+
+.freeTextArea{
+    padding:10px;
+    background: #fff;
+}
+.freeTextAreaTitle{
+    border-bottom: 1px solid #7bbdbe;
+}
+.caution{
+    font-size: 0.8em;
+}
+.freeText{
+    width:578px;
+    height:400px;
+    overflow-y: scroll;
+}
+.freeTextInputArea{
+    text-align: right;
+    display:none;
+}
+.freeTextInput{
+    width:578px;
+    height:400px;
+}
+.btnGroup{
+    margin-top:20px;
+}
+input[type="file"]{
+    display:none;
+}
+
+.red{
+    color: #f00;
+}

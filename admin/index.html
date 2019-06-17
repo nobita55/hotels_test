@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ホテルズワーク管理 | 管理ツールTOP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/admin.css" rel="stylesheet" type="text/css"/>
+        <link href="css/admin_top.css" rel="stylesheet" type="text/css"/>
+        <script src="js/vender/jquery.js" type="text/javascript"></script>
+        <link href="js/vender/dist/sweetalert.css" rel="stylesheet" type="text/css">
+        <script src="js/vender/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <h2 class="topText"><a href="./index.html" class="linkTop">ホテルズワーク管理</a> <span class="topTextSep">|</span> <span class="topToolName">管理ツールTOP</span>
+            </h2>
+        </header>
+        <div class="container cBg">
+            <div class="menu">
+                <div class="menuTitle">
+                    menu
+                </div>
+                <div class="menuLine">
+                    <a href="./job_search_admin.php" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            求人情報管理
+                        </div>
+                    </a>
+                    <a href="./recommend_admin.html" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            お勧めの仕事管理
+                        </div>
+                    </a>
+
+                    <a href="./keyword_admin.html" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            キーワード設定
+                        </div>
+                    </a>
+
+                </div>
+                <div class="menuLine">
+
+                    <a href="./special_admin.php" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            特集管理
+                        </div>
+                    </a>
+                    <a href="./special_top.html" class="euplink" target=”_blank>
+                        <div class="menuCell jsMenuCell">
+                           　特集表示設定
+                        </div>
+                    </a>
+
+
+                    <!--<a href="./tool/make_combz_list.php" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            コンビーズCSV出力
+                        </div>
+                    </a>-->
+                    <div class="menuCell jsMenuCell">
+                    </div>
+                </div>
+                <!--
+                <div class="menuLine">
+                    <a href="./option_admin.html" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            オプション管理
+                        </div>
+                    </a>
+                    
+                    <div class="menuCell jsMenuCell">
+                    </div>
+                    <a href="./invoice_admin.php" class="euplink" target=”_blank>
+                        <div class="menuCell jsMenuCell">
+                            請求一覧
+                        </div>
+                    </a>
+
+                </div>
+                -->
+                <!--
+                <div class="menuLine">
+                    
+                    <a href="./special_admin.html" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            特集
+                        </div>
+                    </a>
+                    <a href="./special_sp_admin.html" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            スマフォ特集
+                        </div>
+                    </a>
+                                        <div class="menuCell jsMenuCell">
+                    </div>
+                </div>
+                <div class="menuLine">
+                    <a href="./recommend_sp_admin.html" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            注目の仕事
+                        </div>
+                    </a>
+                    <a href="./pr_admin.html" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            PR枠
+                        </div>
+                    </a>
+                    <a href="./favorite_word_admin.html" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            人気ワード
+                        </div>
+                    </a>
+                </div>
+                -->
+                <div class="menuLine">
+                    <a href="./company_entry.php?mode=list" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            企業申し込み
+                        </div>
+                    </a>
+                    <!--
+                    <a href="./announce_admin.html" class="euplink" target=”_blank>
+                        <div class="menuCell jsMenuCell">
+                           　全体へのアナウンス
+                        </div>
+                    </a>
+                    -->
+                    <div class="menuCell jsMenuCell">
+                    </div>
+                    <!--<a href="./tool/make_combz_list.php" class="euplink">
+                        <div class="menuCell jsMenuCell">
+                            コンビーズCSV出力
+                        </div>
+                    </a>-->
+                    <div class="menuCell jsMenuCell">
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="analyze">
+                    掲載中の案件数： <span class="jobNum"></span> （<span class="jobNumPresentMonth"></span>）<br>
+                </div>
+
+                <div class="freeTextArea">
+                    <div class="freeTextAreaTitle">
+                        フリーメッセージエリア　<span class="caution">※編集はエリアをダブルクリック</span>
+                    </div>
+                    <div class="freeText">
+                        <span class="freeMemoText"></span>
+                    </div>
+                    <div class="freeTextInputArea">
+                        <textarea class="freeTextInput" name="freeTextInput"></textarea>
+                        <input type="button" class="freeTextCancelBtn" value="キャンセル"> 
+                        <input type="button" class="freeTextSaveBtn" value="保存">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/admin.js" type="text/javascript"></script>
+        <script src="js/admin_index.js" type="text/javascript"></script>
+    </body>
+</html>

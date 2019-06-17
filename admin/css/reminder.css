@@ -1,0 +1,67 @@
+.contents{
+    width:870px;    
+}
+
+.jobInfoTable{
+    width:870px;
+    border:1px solid #888;
+}
+
+.jobInfoTable td{
+    border:1px solid #888;
+    padding-left:5px;
+    line-height: 1.8em;
+}
+
+
+.applyInfoTable{
+    width:870px;
+    border:1px solid #888;
+    margin-top:10px;
+}
+
+.applyInfoTable td{
+    border:1px solid #888;
+    padding-left:5px;
+    line-height: 1.8em;
+}
+
+.subject{
+    background: #e3e9ea;
+    text-align: center;
+    font-weight: bold;
+}
+
+.itemName{
+    background: #dfdfdf;
+    width:180px;
+}
+
+.itemNameNoWidth{
+    background: #dfdfdf;
+}
+
+.applyCtrTable{
+    width:870px;
+    border:1px solid #888;
+    margin-top:10px;
+}
+
+.applyCtrTable td{
+    border:1px solid #888;
+    padding-left:5px;
+    line-height: 1.8em;
+}
+
+.remindMemo,.remindMessage{
+    width:600px;
+    height:150px;
+}
+
+.btns{
+    text-align: center;
+}
+
+.footer{
+    height:50px;
+}

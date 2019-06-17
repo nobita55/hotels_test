@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !(\.(gif|jpe?g|png|js|css))$
+RewriteCond %{REQUEST_URI} !(^/fonts/)
+RewriteRule ([^/]+)/([^/]+) special.php?mode=special&action=$1&param=$2 [L,QSA]
+RewriteRule ([^/]+) special.php?mode=special&action=$1 [L,QSA]

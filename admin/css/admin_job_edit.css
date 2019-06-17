@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+/*レイアウト全般*/
+
+.topTextJobEdit{
+    width: 1500px;
+    font-size: 1.2em;
+    margin: 10px 0 10px 10px;
+    border-bottom: 1px #999 solid;
+    color: #555;
+}
+
+.container{
+    width: 100%;
+    border-top: 1px #aaa solid;
+    border-bottom: 1px #aaa solid;
+    /*padding-top:5px;
+    padding-bottom: 20px;*/
+}
+
+.cBg{
+    background: #e3e9ea;
+}
+
+.main{
+    padding: 5px;
+    display: -moz-box;  
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.centerBox,.rightBox,.additionalBox{
+    margin-left: 10px;
+}
+
+.rowTitleLarge{
+    display: -moz-box;  
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #ebe8e4;
+    font-weight: bold;
+}
+
+.rowTitle{
+    display: -moz-box;  
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #dadada;
+}
+
+.rowTitle div,.rowTitleLarge>div{
+    border-left:1px solid #666;
+    border-top:1px solid #666;
+    padding:2px;
+    padding-left:10px;
+    /*font-weight: bold;*/
+    /*color:#444;*/
+}
+
+.rowContents{
+    display: -moz-box;  
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 1.5rem;
+    background: #fff;
+}
+
+.rowContents > div{
+    border-left:1px solid #666;
+    border-top:1px solid #666;
+    padding:2px;
+    padding-left:5px;
+}
+.w120{
+    width:120px;
+}
+.w160{
+    width:160px;
+}
+
+.w200{
+    width:200px;
+}
+.w300{
+    width:300px;
+}
+.w400{
+    width:400px;
+}
+
+.w600{
+    width:600px;
+}
+
+.h150{
+    height:150px;
+}
+.borR{
+    border-right:1px solid #666;
+}
+
+.borB{
+    border-bottom:1px solid #666;
+}
+
+.masterError{
+    color:#f00;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.error{
+    font-size: 0.75rem;
+    color:#f00; 
+}
+
+.notes{
+    font-size: 0.75rem;
+    color:#555; 
+}
+
+.caution{
+    font-size: 0.75rem;
+    color:#44b;
+    /*padding-left:10px;*/
+}
+
+.must{
+    font-size: 0.75rem;
+    color:#b00;
+    /*padding-left:10px;*/
+}
+
+.checkBoxList,.checkBoxListSmall{
+    list-style-type: none;
+    margin:0;
+    padding : 3px;
+}
+
+
+.checkBoxList li{
+    width:250px;
+    display: inline-block;
+    font-size: 0.9em;
+    border-bottom: 1px #ddd dotted;
+    border-left: 1px #ddd dotted;
+}
+
+.checkBoxListSmall li{
+    width:190px;
+    display: inline-block;
+    font-size: 0.9em;
+    border-bottom: 1px #ddd dotted;
+    border-left: 1px #ddd dotted;
+}
+
+.checkBoxListCategory{
+    width:100% !important;
+    font-weight: bold;
+    border-left: none !important;
+}
+
+.btnArea{
+    text-align: center;
+}
+.btnArea div{
+    padding: 10px;
+}
+textarea{
+    width:590px;
+    height:150px;
+    font-size: 0.8em;
+}
+
+.rightTextArea{
+    width:390px;
+    height:200px;
+    font-size: 0.8em;
+}
+
+
+.textRemainNum{
+    color:#777;
+    text-align: right;
+}
+
+.mailLinkBox{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.mailLinkTitle{
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+}
+.mailLink{
+    -webkit-box-flex:2;
+    -webkit-flex:2;
+    text-align: right;
+    padding-right:5px;
+}
+.copyJob,.startMail,.stopMail,.deleteMail{
+    font-size:0.8em;
+    font-weight: normal;
+}
+
+.printBtn{
+    font-weight: normal;
+}
+/*
+.jsResortParam{
+    display:none;
+}*/
+
+.w600input {
+    width:590px
+}

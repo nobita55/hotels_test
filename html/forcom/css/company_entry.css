@@ -1,0 +1,270 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016/08/31, 13:22:07
+    Author     : sakam
+*/
+
+header {
+    display: flex;
+    border-bottom: 1px solid #aaaaaa;
+    padding:10px;
+    background-color:#dddddd
+}
+
+.headerText {
+    width:900px;
+    margin:0 auto;
+    padding-bottom:5px;
+    border-bottom:1px solid #999999
+}
+
+#main {
+
+}
+
+/* テーブル */
+.companyEntry {
+    width:900px;
+    margin:0 auto;
+    margin-top:20px
+}
+
+/* テーブルセル */
+.leftCell {
+    background-color:#f3c759;
+    /*background-color:#ffc948;*/
+    width:200px;
+    font-size:15px;
+    border-bottom:1px solid #c68283;
+    border-right:1px solid #c68283;
+    border-left:1px solid #c68283;    
+    padding:20px 7px
+}
+
+.rightCell {
+    /*background-color:#a2cc67;*/ 
+    background-color:#fff7aa;   
+    width:700px;
+    font-size:15px;
+    border-bottom:1px solid #c68283;
+    border-right:1px solid #c68283;
+    padding:10px 30px;
+}
+
+.mustText {
+    color:#ff0000;
+    font-size:12px;
+    margin-bottom:5px
+}
+
+.caption {
+    font-size:12px;
+    margin-top:5px    
+}
+
+.topCellLeft{
+    border-top:1px solid #c68283;
+}
+
+.topCellRight{
+    border-top:1px solid #c68283;
+}
+
+/* 小セル */
+.sCellLeft {
+    width:60px;
+    font-size:12px;
+    text-align: center;
+    background-color: #c0d860;
+    border-bottom:1px solid #c68283;
+    border-right:1px solid #c68283;
+    padding:20px 3px
+}
+
+.sCellBottom {
+    border-bottom:1px solid #c68283;
+}
+
+.sCellRight {
+    width:640px;
+    background-color:#fff7aa;
+    border-bottom:1px solid #c68283;
+    border-right:1px solid #c68283;
+    padding:10px 30px;
+}
+
+/* 必須アイコン */
+.must {
+    font-size:10px;
+    color:#ffffff;
+    letter-spacing:0.5em;
+    text-align:center;
+    text-indent:0.5em;
+    padding:5px 2px;
+    background-color:#f83b3b;
+    width:40px;
+    float:right;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; 
+}
+
+/* 仕事内容・部門 */
+.jobSection {
+    display: table-cell;
+    vertical-align: middle;
+    width:200px;
+}
+
+/* 仕事内容・職種 */
+.jobCategory {
+    display: table-cell;
+    vertical-align: middle; 
+}
+
+/* シフト */
+.shiftText {
+    float:left;
+    width:65px;
+    margin-bottom:20px
+}
+
+.shiftBottom {
+    margin-bottom:0
+}
+
+/* テキストフィールド設定 */
+.inputTime {
+    float:left;
+    margin-right:30px;
+}
+
+.inputTime input {
+    width:80px;
+    margin:0 5px
+}
+
+/* 休日・休暇 */
+.holidayBox {
+    float:left;
+    width:180px;
+    margin-bottom:20px
+}
+
+.holidayBox input {
+    margin-right:5px
+}
+
+.holidayText {
+    float:left;
+    width:65px;
+}
+
+/* テキストフィールドのマージン */
+.inputMargin {
+    margin-left:5px
+}
+
+/* 給与 */
+
+.salaryBox {
+    display: table
+}
+
+.salaryBoxLeft {
+    display: table-cell;
+    width:220px;
+    text-align: center;
+}
+
+.salaryBoxRight {
+    padding-left:30px;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.salaryBoxLeft select {
+    margin-bottom: 5px
+}
+
+/* 寮・社宅情報 */
+.dormitoryBox {
+    float:left;
+    width:150px;
+    margin-top:20px
+}
+
+.dormitoryBox input {
+    margin-right:5px
+}
+
+.dormitoryOther {
+    margin-top:20px
+}
+
+.dormitoryOther input {
+    margin-left:10px
+}
+
+.dormitoryOtherBox {
+    margin-top:20px
+}
+
+/* 備考 */
+.bikou {
+    width:600px
+}
+
+/* 送信ボタン */
+.submit {
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 100px
+}
+
+.submit input {
+    width:200px;
+    height:50px
+}
+
+/* 共通 */
+.other {
+    width:505px
+}
+
+.otherBox {
+    float:left;
+    padding-left:5px
+}
+
+/* jQuery関連 */
+
+.redBackground{
+    background:#ffb6b6;
+}
+
+/* プレースホルダ― */
+
+/* 各ベンダープレフィックスが取れた標準版！！(http://caniuse.com/#search=placeholder-shown) */
+:placeholder-shown {
+    color: #888888; }
+
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+::-webkit-input-placeholder {
+    color: #888888; }
+
+/* Firefox 18- */
+:-moz-placeholder {
+    color: #888888; opacity: 1; }
+
+/* Firefox 19+ */
+::-moz-placeholder {
+    color: #888888; opacity: 1; }
+
+/* IE 10+ */
+:-ms-input-placeholder {
+    color: #888888; }

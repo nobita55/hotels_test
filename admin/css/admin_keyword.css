@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/*レイアウト全般*/
+.container{
+    width: 100%;
+    display: -moz-box;  
+    display: -webkit-box;
+    border-top: 1px #aaa solid;
+    border-bottom: 1px #aaa solid;
+    padding-top:5px;
+    padding-bottom: 20px;
+}
+
+.cBgKeyword{
+    background: #e3e9ea;
+}
+
+.container .leftCandL{
+    border: 1px #aaa solid;
+    margin-right:8px;
+}
+.container .leftContents{
+    width:600px;
+    padding-left: 10px;
+}
+
+.container .centerContents{
+    width:30px;
+}
+.container .rightContents{
+    width: 500px;
+    height: 700px;
+    text-align: left;
+}
+
+
+/*
+*テーブル
+*/
+
+.keywordTable{
+    width: 568px;
+}
+
+.countTable{
+    width: 518px;
+}
+
+/*スクロール用*/
+thead.scrollHead,tbody.scrollBody{
+    display:block;
+}
+
+tbody.scrollBody{
+    overflow-y:scroll;
+    background: white;
+}
+tbody.countScroll{
+    height: 620px; 
+    border: 1px #aaa solid;
+}
+tbody.keywordScroll{
+    height: 520px;
+}
+
+/*幅調整*/
+th{
+    table-layout:fixed;
+    border: 1px #aaa solid;
+    border-bottom: none;
+    background: #ddd;
+    text-align: center;
+    padding: 0px 5px;
+}
+td{
+    table-layout:fixed;
+    border: 1px dotted #aaa;
+    padding: 0px 5px;
+}
+
+/*セル*/
+.sortRank{
+    width:100px;
+}
+.keywordCell{
+    width:450px;
+}
+
+.count{
+    width:100px;
+}
+
+.searchWord{
+    width:400px;
+}
+
+
+td.sortRank,td.count{
+    text-align: right;
+}
+
+/*コントローラー*/
+.leftControllers{
+    /*width: 900px;*/
+    height: 100px;
+    display: -moz-box;  
+    display: -webkit-box;
+}
+
+.keywordController{
+    padding-left: 20px;
+    padding-top: 5px;
+    line-height:1.5em;
+    width: 550px;
+}
+
+.btns{
+    margin-top:20px;
+    text-align: right;
+}
+/*フォーム*/
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+input[type="text"]{
+    height: 25px;
+    font-size:110%
+}
+
+input[type="number"] {
+    padding-left: 5px;
+    width: 50px;
+    height: 25px;
+    font-size:110%;
+}
+
+.keyword{
+     width: 200px;
+}
+
+.jsStatus{
+    color: #438f90;
+    font-weight: bold;
+}

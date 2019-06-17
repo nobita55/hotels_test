@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/*------------------------------------------------------------------
+[ 02. Search Panel ]
+*/
+
+/* 検索枠のカラー制御 */
+
+.searchBox {
+	text-align: center;
+	margin-bottom:22px;
+}
+
+
+
+
+.topSearchBox {
+	margin-top:8px;
+	padding: 8px 0 20px;
+	background-color: #f2eeed;
+}
+
+.listHeaderSearchBox {
+	padding: 27px 0 27px;
+	background-color: #d86f77;
+}
+
+@media only screen and (min-width:640px) {
+
+.listFooterSearchBox {
+	margin-top: 22px;
+	margin-bottom: 121px;
+	padding: 20px 0 24px;
+	background-color: #f2eeed;
+}
+}
+
+@media only screen and (max-width:639px) {
+
+.listFooterSearchBox {
+	margin-top: 0px;
+	margin-bottom: 60px;
+	padding: 20px 0 24px;
+	background-color: #f2eeed;
+}
+}
+
+/* セレクトボックス制御------------------------------- */
+/* セレクトボックスの長さの制御 */
+
+@media only screen and (min-width:640px) {
+
+.topSB {
+	width: 41.5%;
+}
+
+.listSB {
+	width: 47.5%;
+	display:inline-block;
+}
+}
+
+@media only screen and (max-width:639px) {
+
+.topSB {
+	width: 42%;
+}
+
+.listSB {
+	width: 96%;
+}
+}
+
+
+/* セレクトボックスのプレースホルダーを実現 */
+
+.searchBox select, .searchBox option {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Osaka, sans-serif, 'FontAwesome';
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	height: 40px;
+	margin-bottom: 5px;
+	padding-left:10px;
+	
+	font-size: 1.5rem;
+	line-height: 40px;
+	/*color: #afafaf;*/
+	background: #ffffff url(../img/common/form/selectarrow.gif) no-repeat;
+	background-size: 20px 15px;
+	background-position: right center;
+	vertical-align: middle;
+	border: 1px solid #e9e2e0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.changearrow option {
+	background: #ffffff url(../img/common/form/schangearow.gif) no-repeat;
+	background-size: 20px 15px;
+	background-position: right center;
+	vertical-align: middle;
+}
+ @-moz-document url-prefix() { /* for firefox */
+.searchBox select {
+background:none;
+background-color: #FFF;
+}
+}
+
+.place {
+	color: #FF0004;
+}
+
+/* 職種選択用疑似セレクトボタン */
+.jobselectBt{
+	height: 40px;
+	margin:0 auto 5px;
+	padding-left:5px;
+	
+	font-size: 1.5rem;
+	line-height: 40px;
+	color: #444444;
+	text-align:left;
+	
+	background: #ffffff url(../img/common/form/changearrow.gif) no-repeat;
+	background-size: 52px 15px;
+	background-position: right center;
+	
+	border: 1px solid #e9e2e0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.jobselectBt a{
+	display:block;
+	color:#444444;}
+
+.jobselectBt a:hover{
+}
+	
+.jobselectBt .fa{
+	margin-right:5px;}
+
+
+
+/* フリーワード検索の装飾----------------------- */
+
+input[type="text"]{
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.freeword {
+	height: 30px;
+	position: relative;
+}
+
+.freeword input[type="text"] {
+	display: inline-block;
+ *display:inline;
+	vertical-align: middle;
+	width: auto;
+	margin: 0;
+	padding: 5px 0;
+	font-size: 1.6rem;
+	border: 1px solid #e9e2e0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #fff;
+}
+
+
+
+
+/* フリーワード枠の装飾 */
+.freeword #s {
+	padding: 5px 10px 5px 5px;
+	height: 40px;
+	line-height: 40px;
+	border: solid 1px #e9e2e0;
+	border-radius: 5px;
+}
+
+/* フリーワード枠の長さ制御 */
+
+@media only screen and (min-width:640px) {
+
+.topFW #s {
+	width: 83.5%;
+}
+
+.listHeaderFW #s {
+	width: 96%;
+}
+
+.listFooterFW #s {
+	width: 80%;
+}
+}
+
+@media only screen and (max-width:639px) {
+
+.topFW #s {
+	width: 84%;
+}
+
+.listHeaderFW #s {
+	width: 96%;
+}
+
+.listFooterFW #s {
+	width: 80%;
+}
+}
+
+/* フリーワード検索のボタンデザイン */
+
+.freeword #searchsubmit {
+	position: absolute;
+	right: 1px;
+	display: inline-block;
+	height: 38px;
+	margin-top: 1px;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	border: 0 none;
+	border-radius: 0 5px 5px 0;
+	-webkit-appearance: button;
+	content: "";
+	cursor: pointer;
+}
+
+.topFW #searchsubmit {
+	right: 8%;
+	width: 12%;
+	font-size: 2.0rem;
+	color: #ffffff;
+	background: #5ea5a5;
+}
+
+.listHeaderFW #searchsubmit {
+	right: 2%;
+	width: 12%;
+	font-size: 2.0rem;
+	color: #5ea5a5;
+	background-color:#eaeaea;
+
+}
+
+.listFooterFW #searchsubmit {
+	right: 15px;
+	width: 8%;
+	font-size: 2.3rem;
+	color: #5ea5a5;
+	background: #ffffff;
+}

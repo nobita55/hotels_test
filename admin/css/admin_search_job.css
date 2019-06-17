@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/*レイアウト全般*/
+.container{
+    width: 100%;
+    display: -moz-box;  
+    display: -webkit-box;
+    border-top: 1px #aaa solid;
+    border-bottom: 1px #aaa solid;
+    /*padding-top:5px;
+    padding-bottom: 20px;*/
+}
+
+.cBg{
+    background: #e3e9ea;
+}
+
+.container .contents{
+    border-right: 1px #aaa solid;
+}
+
+.container .main{
+    display: -moz-box;  
+    display: -webkit-box;
+}
+
+.container .listContens{
+    width:1820px;
+    height:730px;
+}
+
+.boxUpper{
+    height:35px;
+    line-height: 35px;
+    font-weight: bold;
+    color: #444;
+
+    display:-webkit-box;
+    display:-webkit-flex;
+    -webkit-box-orient:horizontal;
+    -webkit-flex-direction:row;
+}
+.boxUpperLeft{
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+
+}
+
+.boxUpperRight{
+    -webkit-box-flex:1;
+    -webkit-flex:2;
+    text-align: right;
+    padding-right:100px;
+}
+
+.resultCount{
+    display:inline-block;
+    margin:0 5px 0 20px;
+}
+
+.easySearch{
+    display:inline-block;
+    background: #fff;
+    padding:0 10px;
+    margin:0 20px; 
+}
+
+.targetSelecter{
+    display:inline-block;
+    margin:0 20Px; 
+}
+
+
+input[name="srListSwitch"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.fwNormal{
+    font-weight: normal;
+}
+/*
+*テーブル
+*/
+.jobsTable{
+    /*width: 1850px;*/
+    font-size: 0.8em;
+}
+
+/*スクロール用*/
+
+thead.scrollHead,tbody.scrollBody{
+    display:block;
+}
+
+tbody.scrollBody{
+    overflow-y:scroll;
+    background: white;
+}
+tbody.jobsScroll{
+    height: 600px;
+    border: 1px #aaa solid;
+}
+
+/*幅調整*/
+th{
+    table-layout:fixed;
+    border: 1px #aaa solid;
+    border-bottom: none;
+    background: #ddd;
+    text-align: center;
+    padding: 0px 2px;
+}
+td{
+    table-layout:fixed;
+    border: 1px dotted #aaa;
+    padding: 0px 2px;
+}
+/*セル*/
+.jobsScroll td{
+    height:23px;
+}
+
+
+.jobNumber{
+    width:40px;
+}
+.jobCtrButtons{
+    width:180px;
+}
+
+.jobId{
+    width:80px;
+}
+
+.jobManager{
+    width:50px;
+    text-align: center;
+}
+
+.jobStatus{
+    width:50px;
+    text-align: center;
+}
+
+.jobMemo{
+    width:40px;
+    text-align: center;
+}
+.jobDeleted{
+    width:40px;
+    text-align: center;
+}
+
+.jobRegistDate{
+    width:90px;
+}
+
+.jobModifyDate{
+    width:90px;
+}
+
+.jobSortdate{
+    width:90px;
+}
+
+.jobCpName{
+    width:310px;
+}
+
+.jobTitle{
+    width:450px;
+}
+
+.jobApply{
+    width:60px;
+}
+
+.jobShokushu{
+    width:160px;
+}
+
+.jobKoyo{
+    width:160px;
+}
+
+.jobPref{
+    width:60px;
+}
+
+.jobHotel{
+    width:200px;
+}
+
+td.jobNumber,td.jobRegistDate,td.jobSortdate,td.jobModifyDate{
+    text-align: right;
+}
+
+td.jobStatus,td.jobDeleted,td.jobApply,td.jobPref{
+    text-align: center;
+}
+/*
+td.jobRegi
+stDate,td.jobCheckDate,
+td.jobApply,td.jobUnsupported{
+    background: #fafafa;
+}
+*/
+
+textarea[name="popMemoInput"]{
+    width:300px;
+     height:200px;
+}
+
+
+/*調整用*/
+.searchClearBtn, .editBtn{
+    padding-left:20px;
+    padding-right:20px;
+    height: 30px;
+    color: #fff;
+    background-color:#768d87;
+    -moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    -webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+    background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #566963;
+    font-weight:bold;
+}
+.searchClearBtn:hover , .editBtn:hover{
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+    background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+    background-color:#6c7c7c;
+}
+
+.newJobClearBtn{
+    padding-left:20px;
+    padding-right:20px;
+    height: 30px;
+    color: #fff;
+    background-color:#f6a60c;
+    -moz-box-shadow:inset 0px 1px 3px 0px #ffe5a6;
+    -webkit-box-shadow:inset 0px 1px 3px 0px #ffe5a6;
+    box-shadow:inset 0px 1px 3px 0px #ffe5a6;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6a60c), color-stop(1, #c26921));
+    background:-moz-linear-gradient(top, #f6a60c 5%, #c26921 100%);
+    background:-webkit-linear-gradient(top, #f6a60c 5%, #c26921 100%);
+    background:-o-linear-gradient(top, #f6a60c 5%, #c26921 100%);
+    background:-ms-linear-gradient(top, #f6a60c 5%, #c26921 100%);
+    background:linear-gradient(to bottom, #f6a60c 5%, #c26921 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6a60c', endColorstr='#c26921',GradientType=0);
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #6e4d32;
+    font-weight:bold;
+}
+
+.newJobClearBtn:hover{
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c26921), color-stop(1, #f6a60c));
+    background:-moz-linear-gradient(top, #c26921 5%, #f6a60c 100%);
+    background:-webkit-linear-gradient(top, #c26921 5%, #f6a60c 100%);
+    background:-o-linear-gradient(top, #c26921 5%, #f6a60c 100%);
+    background:-ms-linear-gradient(top, #c26921 5%, #f6a60c 100%);
+    background:linear-gradient(to bottom, #c26921 5%, #f6a60c 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c26921', endColorstr='#f6a60c',GradientType=0);
+    background-color:#c26921;
+}
+

@@ -1,0 +1,78 @@
+
+/* QAページのタイトル装飾 */
+.qaCategory {
+margin-top:36px;
+margin-bottom:31px;
+padding-bottom:19px;
+
+color:#444444;
+font-size:1.6rem;
+font-weight: bold;
+border-bottom:1px solid #cccccc;
+
+}
+
+/* 質問と回答 */
+.qa {
+	background-color: #ffffff;
+	color:#777777;
+	}
+
+
+.qa .qaSection {
+	margin-top: 10px
+	}
+
+
+.qa .qaSection>dt {
+position: relative;
+font-size: 1.6rem;
+margin-top: 15px;
+padding-left: 30px;
+
+font-weight:bold;
+}
+
+
+.qa>dd {
+	padding-left: 30px;
+	font-size:1.2rem;}
+	
+	
+.qa .qaSection>dd {position: relative;padding:16px 10px 15px 30px}
+
+.qa .qaSection>dd:not(:last-child) {border-bottom: 1px solid #ede6e7}
+
+
+
+/* QとＡのマーク */
+.qa .qaSection>dt .q {
+position: absolute;
+left: 0;
+font-size: 1.6rem
+}
+
+.qa .qaSection>dd .a {
+position: absolute;
+color: #f08f9b;
+top: 16px;
+left: 0;
+font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ホテルズワーク管理 | お勧めのお仕事管理</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/admin.css" rel="stylesheet" type="text/css"/>
+        <link href="css/admin_recommend.css" rel="stylesheet" type="text/css"/>
+        <script src="js/vender/jquery.js" type="text/javascript"></script>
+        <script src="js/vender/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/vender/underscore.js" type="text/javascript"></script>
+        <link href="js/vender/dist/sweetalert.css" rel="stylesheet" type="text/css">
+        <script src="js/vender/dist/sweetalert.min.js"></script>
+        <script src="js/admin.js" type="text/javascript"></script>
+        <script src="js/admin_recommend.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="MenuContainer">
+                <input id="menu" type="checkbox" name="menu" class="HiddenCheckbox"/>
+                <label for="menu" class="MenuIcon"></label>
+                <h2 class="MenuHeader">Menu</h2>
+                <nav class="Menu">
+                    <ul class="Menu-list">
+                        <li class="Menu-item"><a href="./index.html" class="Menu-link">管理ツールTOP</a></li>
+                        <li class="Menu-item"><a href="./job_search_admin.php" class="Menu-link">求人情報管理</a></li>
+                        <li class="Menu-item"><a href="./recommend_admin.html" class="Menu-link">お勧めの仕事管理</a></li>
+                        <li class="Menu-item"><a href="./keyword_admin.html" class="Menu-link">キーワード設定</a></li>
+                        <li class="Menu-item"><a href="./special_admin.php" class="Menu-link">特集管理</a></li>
+                        <li class="Menu-item"><a href="./special_top.html" class="Menu-link">特集表示設定</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h2 class="topText"><a href="./index.html" class="linkTop">ホテルズワーク管理</a> <span class="topTextSep">|</span> <span class="topToolName">お勧めのお仕事管理</span>
+            </h2>
+        </header>
+        <div class="container cBgReccomend">
+            <div class="leftContents">
+                <h2>お勧めのお仕事</h2>
+
+                <div class="leftCandL">
+                    <div class="leftControllers">
+                        <div class="recommendController">
+                            <div class="controllLeft">
+                                <div class="height1line">求人ID</div>
+                                <div class="height2line">タイトル</div>
+                                <div><span>メモ</span></div>
+                            </div>
+                            <div  class="controllCenter">
+                                <div class="height1line"><span class="jsFormJobId"></span></div>
+                                <div class="height2line"><span class="jsFormJobTitle"></span></div>
+                                <div><textarea class="catchCopy" name="catchcopy"></textarea></div>
+                            </div>
+                            <div class="controllRight">
+                                <div class="height1line"><span class="formStatus"></span></div>
+                                <div class="height2line"></div>
+                                <div class="line50">ソートランク <input type="number" class="inputSortRank" name="sort_rank" min="1" value="">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;公開 <input type="checkbox" class="openFlag" name="open_flag" value="1"><br>
+                                    <input type="button" class="btnSave" name="btnSave" value="保存"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommendBox">
+                        <table class="recommendTable">
+                            <thead class="scrollHead">
+                                <tr>
+                                    <th class="sortRank">並び</th>
+                                    <th class="jobNo">JID</th>
+                                    <th class="boshuId">求人情報ID</th>
+                                    <th class="title">タイトル</th>
+                                    <th  class="catch">メモ</th>
+                                    <th class="open">公開</th>
+                                </tr>
+                            </thead>
+                            <tbody class="scrollBody recommendScroll jsRecommendList">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="centerContents">
+                <div class="buttons">
+                    <div>
+                        <a href="#" class="myButton jsBtnRegJob">&lt;&lt;</a>
+                    </div>
+                    <div>
+                        <a href="#" class="myButton jsBtnDelJob">&gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="rightContents">
+                <h2>登録案件</h2>
+                <div class="jobBox">
+                    <table class="jobTable">
+                        <thead class="scrollHead">
+                            <tr>
+                                <th class="jobNo">JID</th>
+                                <th class="boshuId">求人ID</th>
+                                <th class="jobName">タイトル</th>
+                                <th class="city">都道府県</th>
+                            </tr>
+                        </thead>
+                        <tbody class="scrollBody jobScroll jsJobList">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="jobController">
+                    JID:<input type="text" name="searchJobId" class="searchJobId" size="15">
+                    &nbsp;&nbsp;&nbsp;
+                    求人ID:<input type="text" name="searchRecJobId" class="searchRecJobId" size="25">
+                    &nbsp;&nbsp;&nbsp;
+                    担当:<select name="centralManager" class="formCentralManager">
+                        <option value="0"></option>
+                        <option value="1">小池</option>
+                        <option value="2">長澤</option>
+                        <option value="3">梶</option>
+                        <option value="5">宅間</option>
+                        <option value="6">大原</option>
+                        <option value="99">その他</option>
+                        </select>
+                    &nbsp;&nbsp;&nbsp;<input type="button" class="btnSearch" name="btnSearch" value="検索">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

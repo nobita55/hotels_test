@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 詳細ページテーブルデザイン */
+
+.jobdetail table{
+width:100%;
+
+margin-bottom:70px;
+font-size:1.3rem;
+border-bottom: dotted 1px #e0dccc;
+}
+
+
+.jobdetail th{
+　width: 25%;
+padding: 14px 0;
+
+color: #444444;
+font-style: normal;
+font-weight: normal;
+font-size: 1em;
+text-align: left;
+
+
+border-top: dotted 1px #e0dccc;
+background-color: #ffffff;
+}
+
+.jobdetail td{
+width: 75%;
+padding: 14px 0;
+text-align: left;
+
+color: #777777;
+border-top: dotted 1px #e0dccc;
+background-color: #ffffff;
+}
+
+
+h2{
+	margin-bottom:30px;
+	font-size:1.6rem;
+	font-weight:bold;
+	}
+@media only screen and (max-width:639px) {
+h2{	
+	margin-bottom:30px;
+	font-size:1.6rem;
+	font-weight:bold;
+	text-align:center;
+}
+}
+
+@media only screen and (min-width:640px) {
+.detailMainBox{
+		width:1000px;
+		margin:0 auto 40px;
+		
+        display: box;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+		display: flex;
+	}
+
+.detailMainBoxL{
+		width:50%;
+	}
+	
+.detailMainBoxR{
+		width:50%;
+		padding-top:32px;
+	}
+}
+
+/* 詳細ページメイン部分の装飾 */
+	
+@media only screen and (min-width:640px) {
+	.mainImg02{
+		margin-top:11px;
+	}
+}
+
+@media only screen and (max-width:639px) {
+	#wrapper img{
+		width:100%;
+		height:auto;
+		
+		margin:0 auto;
+	}
+	
+	.mainImg02{
+		display:none;
+	}
+}
+	
+/* 詳細ページメイン部分の装飾 */
+
+.detailMainTitle{
+	margin-bottom:24px;
+	font-size:23px;
+	color:#d86f77;}
+
+.detailMainSubTitle{
+	margin-bottom:24px;
+	font-size:16px;
+	color:#44444;}
+	
+.detailMainBoxR p{
+	margin-bottom:44px;
+	font-size:13px;
+	color:#777777;}
+	
+
+/* ボタンデザイン */
+
+.detailMainEntryBt{
+	text-align:center;
+	margin-bottom:22px;
+	background:#5ea5a5;
+	border-radius:3px;
+	-webkit-border-radius:3px;}
+
+.detailMainEntryBt .fa{
+	margin-left:15px;}
+
+.detailMainEntryBt a:hover{
+	background-color:#589a9a;
+	border-radius:3px;
+	-webkit-border-radius:3px;}
+
+@media only screen and (min-width:640px) {
+.detailMainEntryBt{
+font-size:2.2rem;
+margin:0 auto 15px;}
+
+.detailMainEntryBt .fa{
+	font-size:1.9rem;
+}
+
+.detailMainEntryBt a:link,.detailMainEntryBt a:visited{
+display:block;
+padding:15px 0;
+color:#ffffff;
+}
+}
+	
+@media only screen and (max-width:639px) {
+	.detailMainEntryBt{
+		font-size:2.4rem;
+		width:90%;
+		margin:0 auto 15px;}
+		
+	.detailMainEntryBt a:link,.detailMainEntryBt a:visited{
+	display:block;
+	padding:15px 0;
+	color:#ffffff;
+}
+	
+}
+
+
+
+
+
+/* スマホ時電話を掛けるボタンデザイン */
+
+@media only screen and (min-width:640px) {
+.detailMainSPTelBt{
+	display:none;}
+}
+
+@media only screen and (max-width:639px) {
+.detailMainSPTelBt{
+	width:90%;
+	margin:0 auto 5px;
+	line-height:1.3;
+	text-align:center;
+
+	background:#d86f77;
+	border-radius:3px;
+	-webkit-border-radius:3px;}
+	
+.detailMainSPTelBt span{
+	background:url(../img/job/detail/freedial.gif) no-repeat left center;
+	padding-left:27px;
+	background-size: 26px 14px;}
+
+
+.telBtL{
+	display:table-cell;
+	vertical-align:middle
+}
+.telBtR{
+	display:table-cell;
+	vertical-align:middle
+}
+.detailMainSPTelBt .fa{
+	margin-right:18px}
+
+
+.detailMainSPTelBt span{
+	font-size:1.5rem;}
+	
+.detailMainSPTelBt div{
+	font-size:2.5rem;}
+		
+.detailMainSPTelBt a:link,.detailMainSPTelBt a:visited{
+	display:block;
+	padding:10px 0;
+	color:#ffffff;
+}
+}
+
+
+/* 気になるボタン */
+
+@media only screen and (min-width:640px) {
+.detailStudyBt{
+	width:200px;
+	margin-left:auto;
+	margin-bottom:30px;
+	
+	font-size:1.4rem;
+	text-align:center;
+	
+	background:#efefef;
+	border-radius:3px;
+	-webkit-border-radius:3px;}
+	
+	.detailStudyBt a:link,.detailStudyBt a:visited{
+	display:block;
+	padding:10px 0;
+	color:#777777;
+}
+}
+
+@media only screen and (max-width:639px) {
+.detailStudyBt{
+	width:90%;
+	margin:0 auto;
+	margin-bottom:30px;
+	font-size:2.2rem;
+	text-align:center;
+	
+	border:1px solid #e7dcdc;
+	
+	background:#efefef;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.detailStudyBt a:link,.detailStudyBt a:visited{
+	display:block;
+	padding:12px 0;
+	color:#777777;
+}
+}
+
+
+.detailStudyBt .fa{
+	margin-right:10px;}
+	
+
+
+.detailStudyBt a:hover{
+	background-color:#e7dcdc;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.studyBtOn{
+	background:#e7dcdc;
+	color:#444444;
+	font-weight:bold;
+	}
+
+.studyBtOn .fa{
+	color:#d86f77;
+	}
+
+/* 電話番号表記について */
+
+@media only screen and (max-width:639px) {
+.detailMainPCTel{
+	display:none;}
+}
+
+@media only screen and (min-width:640px) {
+.telMoreInfo{
+	margin-bottom:23px;
+
+	font-size:12px;
+	text-align:right;
+	}
+	
+	}
+
+
+@media only screen and (max-width:639px) {
+.telMoreInfo{
+	margin-right:5%;
+	margin-bottom:10px;
+	font-size:12px;
+	text-align:right;
+	}
+	
+	
+.receptionTime{
+	display:none;}
+	
+}
+.offerID{
+	color:#d86f77;
+	}
+	
+	
+/* ページ中段の2カラムボタン */
+@media only screen and (min-width:640px) {
+.entryBtCol2Box{
+		margin-top:60px;
+	    display: box;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+		display: flex;
+	}
+
+.entryBtCol2BoxL{
+	width:48%;
+	margin-right:4%}
+	
+.entryBtCol2BoxR{
+	width:48%;}
+}
+	
+/* ギャラリー */
+
+.gallery span{
+	display:block;
+	font-size:1.3rem;
+	color:#777777;
+	}
+.gallery img{
+	margin:0 5px;
+	}
+
+@media only screen and (min-width:640px) {
+.gallery{
+	display:table;}	
+	
+.gallery div{
+	display:table-cell;
+	width:330px;
+	vertical-align:middle;
+	text-align:center;
+	}
+	
+
+}
+
+@media only screen and (max-width:639px) {
+.gallery div{
+	margin-bottom:10px;
+	}	
+}
+
+
+	
+/* こんな求人を見ています */
+
+.recommendCards{
+	margin-bottom:100px;}	
+	
+@media only screen and (min-width:640px) {
+h3{
+	font-size:2.6rem;
+	margin-bottom:20px;
+	color:#e09f5f;}
+}
+
+@media only screen and (max-width:639px) {
+h3{
+	font-size:1.8rem;
+	margin-bottom:20px;
+	color:#e09f5f;}
+}
+	
+	
+	

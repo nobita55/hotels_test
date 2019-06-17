@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+
+/* 企業様へページタイトル設定
+------------------------------------------------------------*/
+#header{
+	background-color:#ffffff;}
+	
+
+body{
+	background-color:#fff7ef;}
+
+
+.forCompanyTitle {
+	margin-top:-20px;
+	background-color: #f6f5f5;
+}
+.forCompanyTitle img{
+	width:100%;
+	height:auto;
+}
+
+.h2Img{
+	margin:40px 0 60px;
+	text-align:center;}
+
+@media only screen and (max-width:639px) {
+.h2Img img
+	{
+	width:100%;
+	height:auto;
+	}
+}
+
+@media only screen and (min-width:640px) {
+.h2Img+p{
+	width:60%;
+	margin: 0 auto;
+	text-align:center;
+	}
+}
+
+@media only screen and (max-width:639px) {
+.h2Img+p{
+	width:85%;
+	margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width:640px) {
+h3{
+	margin-top:75px;
+	margin-bottom:60px;
+	font-size:2.6rem;
+	color:#444444;
+	text-align:center;
+	}
+
+h3+p{
+	font-size:1.8rem;
+	text-align:center;}
+}
+
+
+@media only screen and (max-width:639px) {
+h3{
+	margin-top:75px;
+	margin-bottom:60px;
+	font-size:1.6rem;
+	color:#444444;
+	text-align:center;
+	}
+
+h3+p{
+	font-size:1.3rem;
+	text-align:center;}
+}
+
+
+
+/* セントラルクルーホームページへのボタン */
+
+@media only screen and (min-width:640px) {
+.toCCBt{
+	width:45%;
+	margin:5px auto 0;
+	font-size:2.0rem;
+	font-weight:bold;
+	text-align:center;
+	border:1px solid #cfcfcf;
+	border-radius:4px;
+	background-color:#5ea5a5;}
+}
+	
+
+@media only screen and (max-width:639px) {
+.toCCBt{
+	width:95%;
+	margin:5px auto 0;
+	font-size:1.6rem;
+	font-weight:bold;
+	text-align:center;
+	border:1px solid #cfcfcf;
+	border-radius:4px;
+	background-color:#5ea5a5;}
+	
+}
+.toCCBt a{
+	display:block;
+	padding:22px 0 25px;
+	color:#ffffff;}
+
+.toCCBt a:hover{
+	background:#539595;}
+
+
+
+
+
+

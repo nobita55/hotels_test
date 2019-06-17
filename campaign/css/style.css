@@ -1,0 +1,262 @@
+/* IMPORT RESET */
+@import url("reset.css");
+/*	EXAMPLE STYLES */
+body {
+	font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+	color: #444444;
+	background-color: #fff1c7;
+}
+a:link {
+	color: #c2c2c2;
+}
+a:visited {
+	color: #c2c2c2;
+}
+a:hover {
+	color: #c2c2c2;
+}
+a:active {
+	color: #c2c2c2;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wrapper {
+}
+.container {
+}
+.mainimage {
+	width: 100%;
+	padding: 0 0 20px 0;
+}
+.suminaviArea {
+	background-color: #ffffff;
+	width: 90%;
+	border-radius: 5px;
+	margin: 0 auto 30px auto;
+	padding: 20px 10px 20px 10px;
+}
+.suminaviMain {
+	width: 95%;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+}
+.suminaviBtn {
+	width: 60%;
+	margin: 0 auto;
+}
+.howtoArea {
+}
+.howtoTit {
+	width: 50%;
+	margin: 0 auto;
+	padding: 0 0 15px 0;
+}
+.howto01 {
+	background-color: #ffffff;
+	width: 90%;
+	border-radius: 5px;
+	margin: 0 auto 5px auto;
+	padding: 15px 10px 20px 10px;
+}
+.howto01Tit {
+	padding: 0 0 10px 0;
+	width: 80%;
+}
+.followBtn {
+	width: 80%;
+	margin: 0 auto;
+}
+.howto02 {
+	background-color: #ffffff;
+	width: 90%;
+	border-radius: 5px;
+	margin: 0 auto 30px auto;
+	padding: 15px 10px 15px 10px;
+}
+.howto02Tit {
+	width: 63%;
+	padding: 0 0 15px 0;
+}
+.tweetArea {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 0 35px 0;
+	border-bottom: #f2f2f2 dotted 3px;
+}
+.border {
+	display: none;
+}
+.retweetArea {
+	padding: 35px 0 0 0;
+}
+.retweetTit {
+	width: 75%;
+	margin: 0 auto;
+}
+.tweet {
+	width: 90%;
+	margin: 0 auto;
+}
+.multiApply {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0 0 40px 0;
+}
+.linkArea {
+	width:94%;
+	margin:0 auto 30px auto;
+	border-width: 3px;
+	border-color: #ec6616;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: #fdf8f5;
+	padding:20px 0 15px 0;
+}
+.linkTit {
+	width: 90%;
+	margin: 0 auto;
+	padding:0 0 010px 0;
+}
+.linkBtn {
+	width: 70%;
+	margin: 0 auto;
+}
+.summaryArea {
+	background-color: #ffffff;
+	width: 90%;
+	border-radius: 5px;
+	margin: 0 auto 20px auto;
+	padding: 25px 10px 15px 10px;
+}
+.summaryTit {
+	width: 55%;
+	margin: 0 auto;
+	padding: 0 0 15px 0;
+}
+.summaryInfo {
+	font-size: 0.7rem;
+	line-height: 1.2;
+}
+footer {
+	-webkit-background-size: 10px 10px;
+	-moz-background-size: 10px 10px;
+	background-size: 10px 10px;
+	background-color: #d23536;
+	background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #cb231b), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, #cb231b), color-stop(.75, #cb231b), color-stop(.75, transparent), to(transparent));
+	background-image: -webkit-linear-gradient(45deg, #cb231b 25%, transparent 25%, transparent 50%, #cb231b 50%, #cb231b 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(45deg, #cb231b 25%, transparent 25%, transparent 50%, #cb231b 50%, #cb231b 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(45deg, #cb231b 25%, transparent 25%, transparent 50%, #cb231b 50%, #cb231b 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(45deg, #cb231b 25%, transparent 25%, transparent 50%, #cb231b 50%, #cb231b 75%, transparent 75%, transparent);
+	background-image: linear-gradient(45deg, #cb231b 25%, transparent 25%, transparent 50%, #cb231b 50%, #cb231b 75%, transparent 75%, transparent);
+	color: #ffffff;
+	font-size: 0.6rem;
+	line-height: 1.2;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+@media ( min-width : 768px ) {
+.wrapper {
+}
+.container {
+}
+.mainimage {
+	padding: 0 0 70px 0;
+}
+.suminaviArea {
+	width: 900px;
+	margin: 0 auto 80px auto;
+}
+.suminaviMain {
+	width: auto;
+	padding: 60px 0 50px 0;
+}
+.suminaviBtn {
+	width: auto;
+	padding: 0 0 50px 0;
+}
+.howtoArea {
+}
+.howtoTit {
+	width: 100%;
+	padding: 0 0 40px 0;
+}
+.howto01 {
+	width: 900px;
+	margin: 0 auto 20px auto;
+}
+.howto01Tit {
+	margin: 0 0 0 -190px;
+	width: 100%;
+	padding: 10px 0 30px 0;
+}
+.followBtn {
+	padding: 0 0 30px 0;
+}
+.howto02 {
+	width: 900px;
+	margin: 0 auto 85px auto;
+}
+.howto02Tit {
+	margin: 0 0 0 -80px;
+	padding: 10px 0 50px 0;
+}
+.tweetArea {
+	border-bottom: none;
+	display: inline-block;
+	padding: 0 0 0 40px;
+	width: auto;
+	vertical-align: top;
+}
+.border {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 0 0 15px;
+}
+.retweetArea {
+	display: inline-block;
+	padding: 0 0 0 0;
+	width: 400px;
+}
+.retweetTit {
+}
+.tweet {
+}
+.multiApply {
+	padding: 0 0 85px 0;
+}
+.linkArea{
+	width: 900px;
+	padding:40px 0 30px 0;
+	}
+.linkTit{
+	width:100%;
+	}
+.linkBtn{
+	width:100%;
+	}
+
+.summaryArea {
+	width: 900px;
+	margin: 0 auto 70px auto;
+}
+.summaryTit {
+	width: 100%;
+	padding: 65px 0 50px 0;
+}
+.summaryInfo {
+	font-size: 1.0rem;
+	line-height: 1.4;
+	padding: 0 50px 70px 50px;
+}
+footer {
+	font-size: 1.0rem;
+	line-height: 1.4;
+	padding: 20px 0;
+}
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ホテルズワーク管理 | キーワード管理</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/admin.css" rel="stylesheet" type="text/css"/>
+        <link href="css/admin_keyword.css" rel="stylesheet" type="text/css"/>
+        <script src="js/vender/jquery.js" type="text/javascript"></script>
+        <script src="js/vender/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/vender/underscore.js" type="text/javascript"></script>
+        <link href="js/vender/dist/sweetalert.css" rel="stylesheet" type="text/css">
+        <script src="js/vender/dist/sweetalert.min.js"></script>
+        <script src="js/admin.js" type="text/javascript"></script>
+        <script src="js/admin_keyword.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="MenuContainer">
+                <input id="menu" type="checkbox" name="menu" class="HiddenCheckbox"/>
+                <label for="menu" class="MenuIcon"></label>
+                <h2 class="MenuHeader">Menu</h2>
+                <nav class="Menu">
+                    <ul class="Menu-list">
+                        <li class="Menu-item"><a href="./index.html" class="Menu-link">管理ツールTOP</a></li>
+                        <li class="Menu-item"><a href="./job_search_admin.php" class="Menu-link">求人情報管理</a></li>
+                        <li class="Menu-item"><a href="./recommend_admin.html" class="Menu-link">お勧めの仕事管理</a></li>
+                        <li class="Menu-item"><a href="./keyword_admin.html" class="Menu-link">キーワード設定</a></li>
+                        <li class="Menu-item"><a href="./special_admin.php" class="Menu-link">特集管理</a></li>
+                        <li class="Menu-item"><a href="./special_top.html" class="Menu-link">特集表示設定</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h2 class="topText"><a href="./index.html" class="linkTop">ホテルズワーク管理</a> <span class="topTextSep">|</span> <span class="topToolName">キーワード管理</span>
+            </h2>
+        </header>
+        <div class="container cBgKeyword">
+            <div class="leftContents">
+                <h2>表示キーワード</h2>
+
+                <div class="leftCandL">
+                    <div class="leftControllers">
+                        <div class="keywordController">
+                            <div>
+                            <span class="jsStatus">新規</span> 
+                            キーワード <input type="text" class="keyword" name="keyword"> 
+                            並び順 <input type="number" class="inputSortRank" name="sort_rank" min="1" value="">
+                            </div>
+                            <div class="btns">
+                            <input type="button" class="btnSave jsBtnNew" name="btnNew" value="新規">　
+                            <input type="button" class="btnSave jsBtnSave" name="btnSave" value="保存">　
+                            <input type="button" class="btnSave jsBtnDel" name="btnDel" value="削除">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="keywordBox">
+                        <table class="keywordTable">
+                            <thead class="scrollHead">
+                                <tr>
+                                    <th class="sortRank">並び</th>
+                                    <th class="keywordCell">キーワード</th>
+                                </tr>
+                            </thead>
+                            <tbody class="scrollBody keywordScroll jsKeywordList">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="centerContents">
+
+            </div>
+            <div class="rightContents">
+                <h2>検索回数</h2>
+                <div class="countBox">
+                    <table class="countTable">
+                        <thead class="scrollHead">
+                            <tr>
+                                <th class="count">カウント</th>
+                                <th class="searchWord">検索ワード</th>
+                            </tr>
+                        </thead>
+                        <tbody class="scrollBody countScroll jsCountList">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

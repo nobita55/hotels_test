@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+.searchBox{
+	padding:8px 0;
+	text-align:center;
+	background-color:#f2eeed;}
+	
+	
+
+.fa-search{
+	position:relative;
+	top:3px;
+	color:#5ea5a5;
+	
+	margin-right:5px;}
+
+
+	
+
+h2{
+
+	margin-bottom:30px;
+	font-size:2.6rem;
+	font-weight:bold;
+}
+
+h2 .fa{
+	font-size:2.8rem;
+	margin-right:10px;}
+	
+@media only screen and (min-width:640px) {
+.recommendH2{
+	margin-top:80px;
+		color:#e09f5f;}
+
+.specialH2{
+		margin-top:82px;
+		color:#d86f77;}
+
+}
+
+@media only screen and (max-width:639px) {
+.recommendH2{
+	margin-top:80px;
+		color:#e09f5f;
+		text-align:center;}
+		
+.recommendH2 i{
+	display:block;}
+
+
+.specialH2{
+		margin-top:82px;
+		color:#d86f77;
+		text-align:center;}
+		
+.specialH2 i{
+	display:block;}
+}
+
+	
+
+	
+
+
+.keywordBt li{
+	display:inline-block;
+	margin:5px 5px 5px 0px;
+	padding:2px 10px;
+	background-color:#f2eeed;
+	
+	border-radius:5px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	}
+
+.keywordBt li a:link{
+	color:#d86f77;
+	}
+.keywordBt li a:visited{
+	color:#d86f77;
+	}
+
+
+.fa-osusume{
+	font-size:8.0rem;
+	color:#e09f5f;}
+
+.specialListBt{
+	width:100%;
+	margin-top:32px;
+	margin-bottom:60px;
+	
+	font-size:1.8rem;
+
+	color:#ffffff;
+	font-weight:bold;
+	text-align:center;
+	border-radius:4px;
+	background-color:#d86f77;}
+	
+.specialListBt a{
+	display:block;
+	padding:15px 0;
+	color:#ffffff;}
+
+.specialListBt a:hover{
+	background-color:#cf6a72;}
+	
+
+/**************************
+/* メイン画像（トップページ+サブページ）
+**************************/
+#mainBanner{
+margin:0px auto;
+padding:0;
+width:100%;
+}
+
+@media only screen and (max-width:939px) {
+#mainBanner img{
+max-width:100%;
+height:auto;
+border-radius:3px;
+}
+}
+
+/* スマートフォン 縦(ポートレート) */
+@media only screen and (max-width:480px){
+	#mainBanner{margin-left:1px;}
+}

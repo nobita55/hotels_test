@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.forRbBt{
+    width:100%;
+    margin-top:20px;
+    margin-bottom:5px;
+    font-size:1.8rem;
+    font-weight:normal;
+    text-align:center;
+    border-radius:4px;
+    background-color:#d86f77;
+    position: relative;
+}
+
+.forRbBt a{
+    display:block;
+    padding:10px 0;
+    color:#fff;}
+
+.forRbBt a:hover{
+    background-color:#cf6a72;}
+
+.forRbBt .fa{
+    margin-right:5px;}
+
+.rbName{
+    color:#fff;
+    font-weight:bold;
+}
+
+.forRbBt a:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    margin: -4px 0 0 0;
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+@media only screen and (max-width:639px) {
+    .forRbBt{
+        font-size:1.4rem;
+    }
+
+    .forRbBt a:after {
+        top: 33px;
+    }
+}

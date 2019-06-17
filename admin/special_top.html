@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ホテルズワーク管理 | 特集表示設定</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/admin_extra.css" rel="stylesheet" type="text/css"/>
+        <link href="css/admin_special_top.css" rel="stylesheet" type="text/css"/>
+        <script src="js/vender/jquery.js" type="text/javascript"></script>
+        <script src="js/vender/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/vender/underscore.js" type="text/javascript"></script>
+        <link href="js/vender/dist/sweetalert.css" rel="stylesheet" type="text/css">
+        <script src="js/vender/dist/sweetalert.min.js"></script>
+        <script src="js/admin.js" type="text/javascript"></script>
+        <script src="js/admin_special_top.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="MenuContainer">
+                <input id="menu" type="checkbox" name="menu" class="HiddenCheckbox"/>
+                <label for="menu" class="MenuIcon"></label>
+                <h2 class="MenuHeader">Menu</h2>
+                <nav class="Menu">
+                    <ul class="Menu-list">
+                        <li class="Menu-item"><a href="./index.html" class="Menu-link">管理ツールTOP</a></li>
+                        <li class="Menu-item"><a href="./job_search_admin.php" class="Menu-link">求人情報管理</a></li>
+                        <li class="Menu-item"><a href="./recommend_admin.html" class="Menu-link">お勧めの仕事管理</a></li>
+                        <li class="Menu-item"><a href="./keyword_admin.html" class="Menu-link">キーワード設定</a></li>
+                        <li class="Menu-item"><a href="./special_admin.php" class="Menu-link">特集管理</a></li>
+                        <li class="Menu-item"><a href="./special_top.html" class="Menu-link">特集表示設定</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h2 class="topText"><a href="./index.html" class="linkTop">ホテルズワーク管理</a> <span class="topTextSep">|</span> <span class="topToolName">特集表示設定</span>
+            </h2>
+        </header>
+        <div class="container cBgSpecialTop">
+            <div class="leftContents">
+                <h2>特集表示</h2>
+
+                <div class="leftCandL">
+                    <div class="leftControllers">
+                        <div class="topSpecialController">
+                            <div  class="controllCenter">
+                                <div class="height2line">特集タイトル&nbsp;&nbsp;<span class="jsFormSpecialTitle"></span></div>
+                                <div>メモ<textarea class="catchCopy" name="catchcopy"></textarea></div>
+                            </div>
+                            <div class="controllRight">
+                                <div class="height1line"><span class="formStatus"></span></div>
+                                <div class="height1line">ソートランク <input type="number" class="inputSortRank" name="sort_rank" min="1" value=""></div>
+                                <div class="line50">
+                                    公開 <input type="checkbox" class="openFlag" name="open_flag" value="1">
+                                    &nbsp;&nbsp;
+                                    TOP看板 <input type="checkbox" class="topFlag" name="top_flag" value="1">
+                                    &nbsp;&nbsp;
+                                    画像リスト <input type="checkbox" class="imgFlag" name="img_flag" value="1">
+                                    <br>
+                                    <input type="button" class="btnSave" name="btnSave" value="保存"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="topSpecialBox">
+                        <table class="topSpecialTable">
+                            <thead class="scrollHead">
+                                <tr>
+                                    <th class="sortRank">並び</th>
+                                    <th class="specialTitle">特集タイトル</th>
+                                    <th  class="catch">メモ</th>
+                                    <th class="open">公開</th>
+                                    <th class="open">看板</th>
+                                    <th class="open">画像</th>
+                                </tr>
+                            </thead>
+                            <tbody class="scrollBody topSpecialScroll jsTopSpecialList">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="centerContents">
+                <div class="buttons">
+                    <div>
+                        <a href="#" class="myButton jsBtnRegJob">&lt;&lt;</a>
+                    </div>
+                    <div>
+                        <a href="#" class="myButton jsBtnDelJob">&gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="rightContents">
+                <h2>特集すべて</h2>
+                <div class="specialBox">
+                    <table class="specialTable">
+                        <thead class="scrollHead">
+                            <tr>
+                                <th class="title">特集タイトル</th>
+                                <th class="num">案件数</th>
+                            </tr>
+                        </thead>
+                        <tbody class="scrollBody specialScroll jsSpecialList">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

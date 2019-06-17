@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 応募フォーム利用規約 */
+
+.kiyaku {
+	font-size:1.2rem;
+	overflow: auto;
+	max-height: 120px;
+	color: #333333;
+	border: 0;
+	padding: 8px;
+	font-family: Arial, sans-serif;
+	border: solid 1px #ccc;
+	margin: 10px 0 3px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+
+@media only screen and (min-width:640px) {
+.kiyaku {
+	width:95%;
+}
+}
+@media only screen and (max-width:639px) {
+.kiyaku {
+	width:100%;
+}
+}
+
+.kiyaku h4 {
+	font-size: 1em;
+	margin: 10px 0px;
+}
+
+.kiyaku dd {
+	font-size:1.2rem;
+}
+
+.kiyaku li {
+	font-size:1.2rem;
+}
+
+
+/* プライバシーポリシーページ */
+
+.privacy h4{
+	font-weight:bold;
+	margin:20px 0 15px}
+
+.privacy .phase{
+	margin-left:8px;}
+
+.privacy dt{
+	margin:5px 0;}	
+.privacy ul{
+	margin-left:15px;}
+	
+.privacy dd{
+	margin-left:15px;}
+	
+.privacy .seitei{
+	margin-top:50px;}	
+	
+	

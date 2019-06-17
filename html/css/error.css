@@ -1,0 +1,521 @@
+@charset "utf-8";
+
+/*
+/*** レスポンシブテーブルデザイン ***/
+
+/* 必須・任意のデザイン制御 */
+.redBackground {
+	background: #ffdddd;
+}
+
+.req {
+	padding: 3px;
+	margin-bottom: 3px;
+	color: #e10404;
+}
+
+.require {
+	display: block;
+	float: right;
+	padding: 0 4px;
+	color: #FF0004;
+	border: 2px solid #ff0004;
+	border-radius: 3px;
+}
+
+.optional {
+	display: block;
+	float: right;
+	padding: 0 4px;
+	color: #13131e;
+	border: 2px solid #13131e;
+	border-radius: 3px;
+}
+
+@media only screen and (min-width:640px) {
+.douiTxt {
+	margin-bottom: 5px;
+	text-align: center;
+}
+}
+
+@media only screen and (max-width:639px) {
+.douiTxt {
+	margin-bottom: 5px;
+	font-size:1.3rem;
+	text-align: center;
+}
+}
+/* 応募完了ページのテキスト */
+@media only screen and (min-width:640px) {
+.thanksTitle{
+	margin-top:113px;
+	margin-bottom:25px;
+	font-size:2.6rem;
+	font-weight:bold;
+	text-align:center;}
+
+.thanksTitle + div{
+	margin-bottom:120px;
+	font-size:1.6rem;
+	color:#777777;
+	text-align:center;}
+}
+@media only screen and (max-width:639px) {
+.thanksTitle{
+	margin-top:113px;
+	font-size:2.0rem;
+	font-weight:bold;
+	text-align:center;}
+
+.thanksTitle + div{
+	width:60%;
+	margin:20px auto 40px;
+	font-size:1.6rem;
+	color:#777777;
+	text-align:center;}
+}
+
+
+/* テーブルレイアウト制御 */
+
+.entryform {
+	padding-bottom:50px;
+	background-color: #ffffff;
+	font-size: 1.6rem;
+}
+
+
+
+.entryform td:first-child {
+	border-bottom: dolid 1px #cccccc;
+}
+
+@media only screen and (min-width:640px) {
+.entryform table {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+
+.entryform table {
+	border-top: 1px solid #cccccc;
+}	
+	
+.entryform th {
+	padding: 10px 10px;
+	width: 30%;
+	color: #13131e;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: middle;
+	border-bottom: 1px solid #cccccc;
+	background-color: #f1f1f1;
+}
+
+.entryform td {
+	padding: 10px 10px;
+	text-align: left;
+	vertical-align: middle;
+	color: #595960;
+	border-bottom: 1px solid #cccccc;
+}
+}
+
+
+
+@media (max-width: 639px) {
+
+.entryform table {
+	width: 100%;
+	margin:0 auto;
+	margin-bottom: 40px;
+}
+
+.entryform th {
+	padding: 10px 10px;
+	width: 100%;
+	color: #13131e;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	display: block;
+	margin: 0 auto;
+	border-top:1px solid #cccccc;
+	background-color: #f1f1f1;
+}
+
+.entryform td {
+	padding: 8px 10px;
+	display: list-item;
+	list-style: none;
+	width: 100%;
+	border-top: none !important;
+}
+}
+
+
+
+
+
+/* インプットフォーム系のデザイン制御 */
+
+
+/* フォーカス時のデザイン */
+
+ input::-webkit-input-placeholder, input:-moz-placeholder, .placeholder {
+}
+ input::-moz-focus-inner {
+border:0;
+}
+
+input[type="text"]:focus, textarea:focus, button:focus, a.button:focus, select:focus, input[type="file"]:focus, input[type="password"]:focus {
+	-webkit-box-shadow: 0 0 7px #6DB9FF;
+	-moz-box-shadow : 0 0 7px #6DB9FF;
+	box-shadow : 0 0 7px #6DB9FF;
+	border: 1px solid #50B1FE;
+	outline: none;
+}
+
+/* インプットタイプ　textの制御 */
+
+input[type="text"]{
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+
+input[type="text"] {
+	border: 0;
+	padding: 10px;
+	font-size: 1.6rem;
+	font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	background: #ffffff
+}
+
+@media only screen and (min-width:640px) {
+table input[type="text"] {
+	width: 95%;
+}
+}
+
+@media only screen and (max-width:639px) {
+table input[type="text"] {
+	width: 100%;
+}
+}
+/* インプットタイプ　textareaの制御 */
+
+@media only screen and (min-width:640px) {
+textarea {
+	width: 95%;
+	height: 80px;
+	padding: 10px;
+
+	font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+	
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	background: #ffffff
+	
+}
+
+.consultTA{
+	height:180px;}
+}
+
+
+@media only screen and (max-width:639px) {
+textarea {
+	width: 100%;
+	height: 80px;
+	padding: 10px;
+
+	font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+	
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	background: #ffffff
+	
+}
+
+.consultTA{
+	height:180px;}
+}
+/* インプットタイプ　dateの制御 */
+
+input[type="date"] {
+	width: 95%;
+	height: 1em;
+	padding: 20px 10px;
+	font-size: 1.6rem;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+	border: solid 1px #ccc;
+}
+
+/* インプットタイプ　selectの制御 */
+
+.entryform select, .entryform option {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Osaka, sans-serif, 'FontAwesome';
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	height: 40px;
+	margin-bottom: 5px;
+	font-size: 1.6rem;
+	line-height: 40px;
+	color: #444444;
+	background: #ffffff url(../img/common/form/selectarrow.gif) no-repeat;
+	background-size: 20px 15px;
+	background-position: right center;
+	vertical-align: middle;
+	border: 1px solid #e9e2e0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* インプットタイプ　ラジオボタンの制御 */
+
+/*RadioとText*/
+label.radio_text {
+	cursor       : pointer;
+	position     : relative;
+	padding-left : 5px;
+	margin-right : 20px;
+	overflow     : hidden;
+	padding-left : 20px;
+	display      : inline-block;
+}
+/* beforeでイクラの大枠 */
+label.radio_text:before {
+	position      : absolute;
+	width         : 17px;
+	height        : 17px;
+	border        : 1px solid #666;
+	border-radius : 50%;
+	left          : 0px;
+	top           : 4px;
+	content       : '';
+	z-index       : 3;
+}
+
+/* afterでイクラの赤丸 */
+label.radio_text:after {
+	content          : '';
+	position         : absolute;
+	width            : 11px;
+	height           : 11px;
+	border-radius    : 100%;
+	left             : 3px;
+	top              : 7px;
+	background-color : #D65;
+	z-index          : 1;
+}
+label.radio_text input[type="radio"] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	position   : absolute;
+	z-index    : 2;
+	width      : 20px;
+	height     : 20px;
+	left       : -23px;
+	top        : 1px;
+	margin     : 0px;
+	box-shadow : 20px -1px #FFF;
+}
+label.radio_text input[type="radio"]:checked {
+	box-shadow : none;
+}
+label.radio_text input[type="radio"]:focus {
+	opacity    : 0.2;
+	box-shadow : 20px -1px #FFF;
+}
+
+
+
+
+/* インプットタイプ　テェックボックスの制御 */
+
+/*CheckBoxとText */
+label.checkbox_text {
+	cursor       : pointer;
+	position     : relative;
+	padding-left : 25px;
+	margin-right : 20px;
+	overflow     : hidden;
+	position     : relative;
+	padding-left : 25px;
+	display      : inline-block;
+	box-sizing   : border-box;
+}
+
+/* beforeで大枠 */
+label.checkbox_text:before {
+	content  : '';
+	position : absolute;
+	width    : 20px;
+	height   : 20px;
+	left     : 0px;
+	top      : 2px;
+	border   : 1px solid #B3B3B3;
+	z-index  : 3;
+}
+
+/* afterでチェックマーク */
+label.checkbox_text:after {
+	content           : '';
+	position          : absolute;
+	top               : 43%;
+	left              : 6px;
+	display           : block;
+	margin-top        : -8px;
+	width             : 8px;
+	height            : 12px;
+	border-right      : 3px solid #D65;
+	border-bottom     : 3px solid #D65;
+	transform         : rotate(45deg);
+	-webkit-transform : rotate(45deg);
+	-moz-transform    : rotate(45deg);
+	z-index           : 1;
+}
+label.checkbox_text input[type="checkbox"] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	position   : absolute;
+	left       : -40px;
+	width      : 20px;
+	height     : 20px;
+	display    : block;
+	box-shadow : 41px 0px #FFF;
+	z-index    : 2;
+	margin     : 0px;
+	padding    : 0px;
+}
+label.checkbox_text input[type="checkbox"]:checked {
+	box-shadow : none;
+}
+label.checkbox_text input[type="checkbox"]:checked:focus {
+	box-shadow : 40px 0px #666;
+	opacity    : 0.1;
+}
+label.checkbox_text input[type="checkbox"]:focus {
+	box-shadow : 41px 0px #EEE;
+}
+
+
+
+/*　ボタンの制御　*/
+
+.toConfirm{
+	margin:0 auto;}
+
+input[type="submit"] {
+   -webkit-appearance: none;
+   border-radius: 0;
+}
+
+.entryButtonBox{
+	    display: box;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+		display: flex;
+		}
+
+
+
+
+
+@media only screen and (min-width:640px) {
+input[type=submit] {
+	display: block;
+	width: 50%;
+
+	padding: 15px 0;
+	font-size: 1.8rem;
+	font-weight: bold;
+	border-radius: 4px;
+	background-color: #d86f77;
+	color: #ffffff;
+}
+
+form input[type=submit]:hover {
+	background-color: #cf6a72;
+}	
+
+.backButton{
+	width:15%;
+	margin-right:20%;
+	paddign:10px;
+
+	text-align:center;
+	border:1px solid #cfcfcf;
+	border-radius:4px;
+	background-color:#f1f1f1;}
+}
+
+@media only screen and (max-width:639px) {
+input[type=submit] {
+	display: block;
+	width:65%;
+
+	padding: 15px 0;
+	font-size: 1.8rem;
+	font-weight: bold;
+	border-radius: 4px;
+	background-color: #d86f77;
+	color: #ffffff;
+}
+
+form input[type=submit]:hover {
+	background-color: #cf6a72;
+}	
+
+.backButton{
+	width:20%;
+	margin-right:5%;
+	paddign:10px;
+
+
+	text-align:center;
+	border:1px solid #cfcfcf;
+	border-radius:4px;
+	background-color:#f1f1f1;}
+}
+
+
+.backButton a{
+	display:block;
+	padding:13px 0;
+	color:#444444;}
+
+
+
+/* 応募完了ページのトップへのボタン */
+
+.toTopBt{
+	width:45%;
+	margin:32px auto 0;
+	font-size:1.8rem;
+	font-weight:bold;
+	text-align:center;
+	border:1px solid #cfcfcf;
+	border-radius:4px;
+	background-color:#f1f1f1;}
+	
+.toTopBt a{
+	display:block;
+	padding:13px 0;
+	color:#444444;}
+
+.toTopBt a:hover{
+	background:#f0eeee;}
+	
+	
+	

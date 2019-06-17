@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Osaka,sans-serif;
+    color: #555555;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+    background:#ffffff;
+    min-width: 320px;
+}
+
+li {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+html>/**/body {
+}
+
+* + html body {
+    font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Osaka,sans-serif;
+}
+
+html{background:#fafafa;}
+
+* { font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Osaka,sans-serif;
+/* font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif; */ }
+
+
+
+/* リンク設定
+------------------------------------------------------------*/
+a{color:#337db6;text-decoration:none;}
+a:hover{color:#246292;}
+a:active, a:focus{outline:0;}
+
+
+/* ホテルズワークページタイトル設定
+------------------------------------------------------------*/
+@media only screen and (min-width:640px) {
+.pageTitle {
+	margin-bottom:20px;
+	padding: 39px 0 37px;
+		
+	font-size:2.6rem;
+	color:#ffffff;
+
+	background-color: #d86f77;
+}
+.pageTitle .fa{
+	margin-right:10px;
+}
+}
+
+@media only screen and (max-width:639px) {
+.pageTitle {
+	margin-bottom:40px;
+	padding: 18px 0 18px;
+	
+	font-size:1.8rem;
+	color:#ffffff;
+	background-color: #d86f77;
+}
+.pageTitle .fa{
+	margin-right:10px;
+}
+}
+
+
+/* 全体
+------------------------------------------------------------*/
+#wrapper{
+margin:0 auto;
+padding:0 1%;
+width:98%;
+position:relative;
+}
+
+.inner{
+margin:0 auto;
+width:100%;
+}
+
+
+	
+@media only screen and (min-width:940px){	
+#wrapper,.inner{
+width:1000px;
+padding:0;
+}
+	
+}
+
+
+
+
+
+/*************
+メイン コンテンツ
+*************/
+section.content{
+padding:19px;
+margin-bottom:20px;
+border:1px solid #ebebeb;
+border-radius:6px;
+background:#fff;
+overflow:hidden;
+font-size:14px;
+}
+
+* html section.content{height:1%;}
+
+section.content p{margin-bottom:5px;}
+
+h3.heading{
+padding-left:7px;
+margin-bottom:10px;
+font-size:16px;
+border-left:5px solid #e4e4e4;
+}
+
+section.content img{
+max-width:90%;
+height:auto;
+}
+
+.alignleft{
+float:left;
+clear:left;
+margin:3px 10px 10px 0;
+}
