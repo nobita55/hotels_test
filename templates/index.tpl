@@ -98,14 +98,14 @@
             <input type="button" id="searchsubmit" class="jsSearchBtn" value="&#xf002;">
             </div> </div>
     </div>
-    <ul class="keywordBt">
+    <!--<ul class="keywordBt">
         {foreach from=$keywords item=row }
         <li><a href="/keyword/search?keyword={$row.wordUrlEn}">{$row.word}</a></li>
         {/foreach}
-    </ul>
+    </ul>-->
     
     <!--<a class="middleBn" href="http://www.skibaito.net/" target="_blank"><img src="/img/top/banner_skii.jpg" alt="2017-2018 SEASON スキー場バイト"/></a>-->
-    
+    <div><a href="https://hotelswork.net/special/contens/4"><img src="/img/top/hokkaido.jpg" width="100%"></</a></div>
     <h2 class="recommendH2"><i class="fa fa-flag-o"></i>おすすめのお仕事</h2>
     <div class="cards-simple-wrapper">
         <div class="row">
